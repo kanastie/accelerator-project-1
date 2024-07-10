@@ -1,0 +1,157 @@
+.features--wrapper {
+  background-color: $bg-add-white;
+}
+
+.features__title {
+  margin: 0;
+
+  font-family: $alumni;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 600;
+  color: $base-blue;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.features__list span:nth-of-type(1) {
+  font-family: $roboto;
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 700;
+
+  background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @media (min-width: $tablet) {
+    font-size: 70px;
+    line-height: 70px;
+  }
+}
+
+.features__list span:nth-of-type(2) {
+  font-family: $roboto;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #2e35ac;
+
+  @media (min-width: $tablet) {
+    line-height: 22px;
+  }
+}
+
+.features__list h3 {
+  margin: 0;
+
+  font-family: $roboto;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $base-blue;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+.features__list p {
+  margin: 0;
+  padding-bottom: 8px;
+
+  font-family: $roboto;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  color: $base-blue;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
+}
+
+.features__list li:nth-of-type(3) span:nth-of-type(1) {
+  font-family: $roboto;
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 700;
+  color: $base-white;
+
+  background: none;
+  background-clip: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: $base-white;
+
+  @media (min-width: $tablet) {
+    font-size: 70px;
+    line-height: 70px;
+  }
+}
+
+.features__list li:nth-of-type(3) {
+  background-color: $bg-add-blue;
+}
+
+.features__list li:nth-of-type(3) span:nth-of-type(2) {
+  font-family: $roboto;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  color: $base-white;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.features__list li:nth-of-type(3) p {
+  margin: 0;
+  padding-bottom: 8px;
+
+  font-family: $roboto;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  color: $base-white;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

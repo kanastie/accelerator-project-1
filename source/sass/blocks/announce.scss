@@ -1,0 +1,88 @@
+.announce--wrapper {
+  background-color: $base-white;
+}
+
+.announce__inner {
+  background-color: $bg-banner;
+}
+
+.announce__title {
+  margin: 0;
+
+  font-family: $alumni;
+  font-size: 48px;
+  line-height: 54px;
+  font-weight: 600;
+  color: $base-white;
+
+  text-transform: uppercase;
+
+  @media (min-width: $desktop) {
+    font-size: 82px;
+    line-height: 96px;
+  }
+}
+
+.announce__timetable {
+  margin: 0;
+}
+
+.announce__term {
+  margin: 0;
+
+  font-family: $roboto;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  color: $base-white;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.announce__desscription {
+  margin: 0;
+
+  font-family: $roboto;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $base-white;
+
+  @media (min-width: $desktop) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.announce__desscription span {
+  display: block;
+  width: min-content;
+
+  font-family: $roboto;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  color: $base-white;
+
+  @media (min-width: $tablet) {
+    line-height: 22px;
+  }
+}
+
+.announce__text {
+  margin: 0;
+
+  font-family: $roboto;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  color: $base-white;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

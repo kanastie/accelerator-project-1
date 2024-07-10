@@ -1,0 +1,54 @@
+.contacts--wrapper {
+  background-color: $base-white;
+}
+
+.contacts__title {
+  margin: 0;
+
+  font-family: $alumni;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 600;
+  color: $base-blue;
+
+  @media (min-width: $tablet) {
+    font-size: 54px;
+    line-height: 54px;
+    text-align: center;
+  }
+}
+
+.contacts__term {
+  margin: 0;
+
+  font-family: $roboto;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $base-blue;
+
+  @media (min-width: $tablet) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+.contacts__description {
+  margin: 0;
+
+  font-family: $roboto;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $base-blue;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.contacts__description a {
+  color: $base-blue;
+  text-decoration: none;
+}
