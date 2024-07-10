@@ -1,0 +1,15 @@
+.link {
+  font-family: $roboto;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  color: $base-white;
+  text-align: center;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &--secondary {
+    color: $base-blue;
+  }
+}

@@ -1,0 +1,19 @@
+.reviews--wrapper {
+  background-color: $base-white;
+}
+
+.reviews__titile {
+  margin: 0;
+
+  font-family: $alumni;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 600;
+  color: $base-blue;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 54px;
+    line-height: 54px;
+  }
+}

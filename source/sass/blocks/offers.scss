@@ -1,0 +1,131 @@
+.offers--wrapper {
+  background-color: $base-white;
+}
+
+.offers__title {
+  margin: 0;
+
+  font-family: $alumni;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 600;
+  color: $base-blue;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
+
+.offers__main {
+  background-color: $bg-banner;
+}
+
+.offers span:nth-of-type(1) {
+  font-family: $roboto;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  color: $base-white;
+
+  @media (min-width: $tablet) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.offers span:nth-of-type(2) {
+  font-family: $roboto;
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 700;
+  color: $base-white;
+
+  @media (min-width: $tablet) {
+    font-size: 70px;
+    line-height: 70px;
+  }
+}
+
+.offers p {
+  margin: 0;
+
+  font-family: $roboto;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  color: $base-white;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.offers__link {
+  font-family: $roboto;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  color: $bg-add-blue;
+  text-align: center;
+
+  text-decoration: underline;
+  text-transform: uppercase;
+
+  &--main {
+    color: $base-white;
+  }
+}
+
+.offers__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.offers__list h3 {
+  margin: 0;
+
+  font-family: $roboto;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  color: $base-blue;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 26px;
+    line-height: 26px;
+    text-align: left;
+  }
+}
+
+.offers__list p {
+  margin: 0;
+  padding-bottom: 8px;
+
+  font-family: $roboto;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  color: $base-blue;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
+}

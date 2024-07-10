@@ -1,0 +1,20 @@
+.persons--wrapper {
+  background-color: $base-white;
+}
+
+.persons__img {
+  display: block;
+  background-color: rgb(118, 118, 118);
+}
+
+.persons__name {
+  display: block;
+  margin-top: -49px;
+
+  font-family: $roboto;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 400;
+  color: $base-white;
+  text-align: center;
+}

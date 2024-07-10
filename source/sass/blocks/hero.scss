@@ -1,0 +1,74 @@
+.hero--wrapper {
+  background: linear-gradient(
+    90deg,
+    #1c3477 0%,
+    #1c3477 0.01%,
+    #1a3578 39.11%,
+    #73184b 75.5%,
+    #b4022a 100%
+  );
+}
+
+.hero__title {
+  margin: 0;
+
+  font-family: $alumni;
+  font-size: 62px;
+  line-height: 62px;
+  font-weight: 800;
+  color: $base-white;
+  text-align: right;
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 72px;
+    line-height: 85px;
+    letter-spacing: 2px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 92px;
+    line-height: 110px;
+    letter-spacing: 4px;
+  }
+}
+
+.hero__badge {
+  font-family: $alumni;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 600;
+  color: $base-white;
+  text-align: right;
+
+  @media (min-width: $tablet) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
+
+.hero__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero__item {
+  font-family: $roboto;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $base-white;
+  text-align: right;
+
+  @media (min-width: $tablet) {
+    line-height: 22px;
+  }
+}

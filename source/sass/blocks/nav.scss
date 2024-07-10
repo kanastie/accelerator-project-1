@@ -1,0 +1,19 @@
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__link {
+  font-family: $roboto;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $base-white;
+
+  text-decoration: none;
+
+  @media (min-width: $tablet) {
+    line-height: 22px;
+  }
+}

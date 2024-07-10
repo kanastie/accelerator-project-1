@@ -1,0 +1,71 @@
+.tabs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tabs__button {
+  font-family: $roboto;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $base-blue;
+  text-align: center;
+
+  border: 1px solid rgba(16, 38, 84, 0.2);
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  &--active {
+    color: $base-white;
+
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  }
+}
+
+.tabs__content details summary::marker {
+  display: none;
+  content: "";
+}
+
+.tabs__content summary {
+  margin: 0;
+
+  font-family: $roboto;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $base-blue;
+
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+.tabs__content p {
+  margin: 0;
+
+  font-family: $roboto;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  color: $base-blue;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

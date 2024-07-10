@@ -1,0 +1,118 @@
+.price--wrapper {
+  background-color: $bg-add-white;
+}
+
+.price__title {
+  margin: 0;
+
+  font-family: $alumni;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 600;
+  color: $base-blue;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
+
+.price__tab {
+  padding: 0;
+
+  font-family: $roboto;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: rgba(16, 38, 84, 0.5);
+  text-align: center;
+
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &--active {
+    color: $base-blue;
+
+    border-bottom: 2px solid $border-tab-color;
+  }
+}
+
+.price__content {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.price__item {
+  background-color: $base-white;
+}
+
+.price__headling {
+  margin: 0;
+
+  font-family: $roboto;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  color: $base-blue;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.price__description {
+  margin: 0;
+  padding-bottom: 8px;
+
+  font-family: $roboto;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  color: $base-blue;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.price__content span {
+  font-family: $roboto;
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 700;
+  color: $accent-blue;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 90px;
+  }
+}

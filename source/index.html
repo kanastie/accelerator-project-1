@@ -15,13 +15,13 @@
     </svg> -->
 
     <main class="main">
-      <section class="hero" data-test="hero">
+      <section class="hero hero--wrapper" data-test="hero">
         <header class="hero__header header">
           <div class="header__logo">
             <img class="header__img" src="" alt="" width="" height="" />
           </div>
           <div class="header__tel">
-            <a class="" href="tel:+88005555555"> 8 800 555-55-55</a>
+            <a class="header__link" href="tel:+88005555555"> 8 800 555-55-55</a>
           </div>
         </header>
         <div class="hero__wrapper">
@@ -32,14 +32,14 @@
             <li class="hero__item">Групповые занятия</li>
             <li class="hero__item">Кардио-зона</li>
           </ul>
-          <a class="hero__link" href="">Купить абонемент</a>
+          <a class="link hero__link" href="">Купить абонемент</a>
           <img class="" src="" alt="" width="" height="" />
         </div>
       </section>
 
-      <section class="about" data-test="about">
+      <section class="about about--wrapper" data-test="about">
         <h2 class="about__title">Тренажёрный зал</h2>
-        <p class="about__slogan">Просторный зал площадью 900 кв/м</p>
+        <span class="about__slogan">Просторный зал площадью 900 кв/м</span>
         <p>
           Supergym – самый большой фитнес центр за Уралом и идеальное место
           для укрепления тела и здоровья. Тренажёрный зал оснащён всем
@@ -56,10 +56,10 @@
         </div>
       </section>
 
-      <section class="price" data-test="price" id="price">
+      <section class="price price--wrapper" data-test="price" id="price">
         <h2 class="price__title">Абонементы</h2>
         <div class="price__tabs">
-          <button class="price__tab" type="button">1 месяц</button>
+          <button class="price__tab price__tab--active" type="button">1 месяц</button>
           <button class="price__tab" type="button">6 месяцев</button>
           <button class="price__tab" type="button">12 месяцев</button>
         </div>
@@ -68,39 +68,39 @@
             <h3 class="price__headling">С тренером</h3>
             <p class="price__description">12 занятий</p>
             <span>5000 <img> </img></span>
-            <a href="">Купить абонемент</a>
+            <a class="link link--secondary" href="">Купить абонемент</a>
           </li>
           <li class="price__item">
             <h3 class="price__headling">Дневной</h3>
             <p class="price__description">с 8:00 до 17:00</p>
             <span>1700 <img> </img></span>
-            <a href="">Купить абонемент</a></li>
+            <a class="link link--secondary" href="">Купить абонемент</a></li>
           <li class="price__item">
             <h3 class="price__headling">Полный день</h3>
             <p class="price__description">с 8:00 до 22:00</p>
             <span>2700 <img> </img></span>
-            <a class="price__link" href="">Купить абонемент</a></li>
+            <a class="link link--secondary" href="">Купить абонемент</a></li>
         </ul>
       </section>
 
-      <section class="announce" data-test="games">
+      <section class="announce announce--wrapper" data-test="games">
         <div class="announce__inner">
           <div class="announce__wrapper">
             <h2 class="announce__title">Super games</h2>
             <dl class="announce__timetable">
               <dt class="announce__term">Дата</dt>
-              <dd class="announce__desscription">7 Марта 2019</dd>
+              <dd class="announce__desscription">7 <span>Марта 2019</span></dd>
               <dt class="announce__term">Время</dt>
               <dd class="announce__desscription">12:00</dd>
             </dl>
           </div>
           <p class="announce__text">Ежегодные соревнования по CrossFit</p>
-          <a class="announce__link" href="">Заполнить заявку</a>
+          <a class="link" href="">Заполнить заявку</a>
         </div>
         <img class="announce__img" src="" alt="">
       </section>
 
-      <section class="persons" data-test="juri">
+      <section class="persons persons--wrapper" data-test="juri">
         <h2 class="persons__title">Жюри</h2>
         <div class="persons__slider">
           <div class="persons__slide">
@@ -110,9 +110,9 @@
         </div>
       </section>
 
-      <div data-test="features">
-        <h2>Наши преимущества</h2>
-        <ul>
+      <section class="features features--wrapper" data-test="features">
+        <h2 class="features__title">Наши преимущества</h2>
+        <ul class="features__list">
           <li>
             <span>900</span>
             <span>кв/м</span>
@@ -127,7 +127,7 @@
           </li>
           <li>
             <span>100</span>
-            <h3>Тренажёров</h3>
+            <span>Тренажёров</span>
             <p>Современные тренажёры на все группы мышц</p>
           </li>
           <li>
@@ -143,9 +143,9 @@
             <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
           </li>
         </ul>
-      </div>
+      </section>
 
-      <section class="offers" data-test="offers" id="offers">
+      <section class="offers offers--wrapper" data-test="offers" id="offers">
         <h2 class="offers__title">Акции</h2>
         <div class="offers__wrapper">
           <div class="offers__main">
@@ -172,12 +172,12 @@
         </div>
       </section>
 
-      <section class="faq" data-test="faq">
+      <section class="faq faq--wrapper" data-test="faq">
         <h2 class="faq__title">Вопросы и ответы</h2>
         <div class="faq__tabs tabs">
           <ul class="tabs__list">
             <li class="tabs__item tabs__item--active">
-              <button class="tabs__button" type="button">Центр</button>
+              <button class="tabs__button tabs__button--active" type="button">Центр</button>
             </li>
             <li class="tabs__item">
               <button class="tabs__button" type="button">Абонемент</button>
@@ -189,23 +189,23 @@
               <button class="tabs__button" type="button">Правила</button>
             </li>
           </ul>
-          <div class="tab-content">
+          <div class="tabs__content">
             <details>
               <summary>Как стать членом фитнес-центра?</summary>
-              При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.
+              <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
             </details>
-            <div>
-              <h3>Где можно посмотреть расписание?</h3>
+            <details>
+              <summary>Где можно посмотреть расписание?</summary>
               <p></p>
-            </div>
-            <div>
-              <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
+            </details>
+            <details>
+              <summary>Есть кулеры в центре? Предоставляются полотенца?</summary>
               <p></p>
-            </div>
-            <div>
-              <h3>Сколько тренеров работает в клубе и какова их квалификация?</h3>
+            </details>
+            <details>
+              <summary>Сколько тренеров работает в клубе и какова их квалификация?</summary>
               <p></p>
-            </div>
+            </details>
           </div>
         </div>
         <div>
@@ -213,7 +213,7 @@
         </div>
       </section>
 
-      <section class="reviews" data-test="reviews">
+      <section class="reviews reviews--wrapper" data-test="reviews">
         <h2 class="reviews__titile">Отзывы</h2>
         <div class="slider slider--wrapper">
           <div class="slider__slide">
@@ -227,16 +227,16 @@
 
       </section>
 
-      <section class="form" data-test="form">
+      <section class="form form--wrapper" data-test="form">
         <h2 class="form__title">Бесплатное занятие</h2>
         <form action="https://echo.htmlacademy.ru/" method="post">
           <input class="form__input input" type="text" name="name" required placeholder="Имя">
           <input class="form__input input" type="number" name="phone" required placeholder="Телефон">
-          <button class="button form__button" type="submit">Отправить</button>
+          <button class="form__button button" type="submit">Отправить</button>
         </form>
       </section>
 
-      <section class="contacts">
+      <section class="contacts contacts--wrapper">
         <h2 class="contacts__title">Контакты</h2>
         <dl class="contacts__list">
           <div>
@@ -256,7 +256,7 @@
 
     </main>
 
-    <footer data-test="footer">
+    <footer class="footer footer--wrapper" data-test="footer">
       <div class="logo">
         <img class="logo__img" src="" alt="" width="" height="" />
       </div>
