@@ -18,41 +18,53 @@
       <section class="hero hero--wrapper" data-test="hero">
         <header class="hero__header header">
           <div class="header__logo">
-            <img class="header__img" src="" alt="" width="" height="" />
+            <img class="header__img" src="img/content-img/logo.svg" alt="Логотип" width="100" height="20">
           </div>
           <div class="header__tel">
             <a class="header__link" href="tel:+88005555555"> 8 800 555-55-55</a>
           </div>
         </header>
-        <div class="hero__wrapper">
-          <h1 class="hero__title">Фитнес центр</h1>
-          <span class="hero__badge">Омск</span>
-          <ul class="hero__list">
-            <li class="hero__item">Тренажёрный зал</li>
-            <li class="hero__item">Групповые занятия</li>
-            <li class="hero__item">Кардио-зона</li>
-          </ul>
-          <a class="link hero__link" href="">Купить абонемент</a>
-          <img class="" src="" alt="" width="" height="" />
+        <div class="hero__inner">
+          <div class="hero__text">
+            <h1 class="hero__title">Фитнес центр</h1>
+            <span class="hero__badge">Омск</span>
+            <ul class="hero__list">
+              <li class="hero__item">Тренажёрный зал</li>
+              <li class="hero__item">Групповые занятия</li>
+              <li class="hero__item">Кардио-зона</li>
+            </ul>
+            <a class="link hero__link" href="">Купить абонемент</a>
+          </div>
+          <picture class="hero__img">
+            <source media="(min-width: 1366px)" srcset="img/content-img/hero-img-desktop.jpg, img/content-img/hero-img-desktop@2x.jpg 2x" type="image/jpeg" width="500" height="524"/>
+            <source media="(min-width: 768px)" srcset="img/content-img/hero-img-tablet.jpg, img/content-img/hero-img-tablet@2x.jpg 2x" type="image/jpeg" width="324" height="390"/>
+            <img  src="img/content-img/hero-img.jpg" alt="Посетитель фитнесс-центра" width="324" height="390" />
+          </picture>
         </div>
       </section>
 
       <section class="about about--wrapper" data-test="about">
-        <h2 class="about__title">Тренажёрный зал</h2>
-        <span class="about__slogan">Просторный зал площадью 900 кв/м</span>
-        <p>
-          Supergym – самый большой фитнес центр за Уралом и идеальное место
-          для укрепления тела и здоровья. Тренажёрный зал оснащён всем
-          необходимым современным оборудованием для всех спортсменов.
-        </p>
-        <p>
-          В зале расположены отдельная зона для Crossfit и кардио-зона
-          с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных
-          залов для различных видов групповых занятий
-        </p>
+        <div class="about__text">
+          <h2 class="about__title">Тренажёрный зал</h2>
+          <span class="about__slogan">Просторный зал площадью 900 кв/м</span>
+          <p>
+            Supergym – самый большой фитнес центр за Уралом и идеальное место
+            для укрепления тела и здоровья. Тренажёрный зал оснащён всем
+            необходимым современным оборудованием для всех спортсменов.
+          </p>
+          <p>
+            В зале расположены отдельная зона для Crossfit и кардио-зона
+            с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных
+            залов для различных видов групповых занятий
+          </p>
+        </div>
         <div>
-          <img src="" alt="" width="" height="" />
-          <img src="" alt="" width="" height="" />
+          <picture class="about__img">
+            <source media="(min-width: 1366px)" srcset="img/content-img/about-img-desktop.jpg, img/content-img/about-img-desktop@2x.jpg 2x" type="image/jpeg" width="660" height="400"/>
+            <source media="(min-width: 768px)" srcset="img/content-img/about-img-tablet.jpg, img/content-img/about-img-tablet@2x.jpg 2x" type="image/jpeg" width="678" height="345"/>
+            <img src="img/content-img/about-img.jpg" srcset="img/content-img/about-img@2x 2x.jpg" alt="Фотография тренажёрного зала" width="320" height="280" />
+          </picture>
+          <img class="about__video" src="img/content-img/video.jpg" srcset="img/content-img/video@2x.jpg 2x" alt="Видео" width="360" height="230" />
         </div>
       </section>
 
@@ -79,25 +91,30 @@
             <h3 class="price__headling">Полный день</h3>
             <p class="price__description">с 8:00 до 22:00</p>
             <span>2700 <img> </img></span>
-            <a class="link link--secondary" href="">Купить абонемент</a></li>
+            <a class="link link--secondary" href="">Купить абонемент</a>
+          </li>
         </ul>
       </section>
 
       <section class="announce announce--wrapper" data-test="games">
         <div class="announce__inner">
-          <div class="announce__wrapper">
+          <div class="announce__main">
             <h2 class="announce__title">Super games</h2>
             <dl class="announce__timetable">
-              <dt class="announce__term">Дата</dt>
-              <dd class="announce__desscription">7 <span>Марта 2019</span></dd>
-              <dt class="announce__term">Время</dt>
-              <dd class="announce__desscription">12:00</dd>
+              <div class="announce__item">
+                <dt class="announce__term">Дата</dt>
+                <dd class="announce__desscription">7 <span>Марта 2019</span></dd>
+              </div>
+              <div class="announce__item">
+                <dt class="announce__term">Время</dt>
+                <dd class="announce__desscription">12:00</dd>
+              </div>
             </dl>
           </div>
           <p class="announce__text">Ежегодные соревнования по CrossFit</p>
           <a class="link" href="">Заполнить заявку</a>
         </div>
-        <img class="announce__img" src="" alt="">
+        <img class="announce__img" src="img/content-img/games.jpg" srcset="img/content-img/games@2x.jpg 2x" alt="Игрок Супер-игр" width="660" height="500">
       </section>
 
       <section class="persons persons--wrapper" data-test="juri">
@@ -218,7 +235,7 @@
         <div class="slider slider--wrapper">
           <div class="slider__slide">
             <div>
-              <img src="" alt="" width="" height="">
+              <img src="" alt="" width="" height="" />
               <h3>Анна Орлова</h3>
               <blockquote>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
             </div>

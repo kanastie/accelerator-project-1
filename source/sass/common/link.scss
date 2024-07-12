@@ -1,4 +1,7 @@
 .link {
+  padding: 22px 0;
+  display: block;
+
   font-family: $roboto;
   font-size: 12px;
   line-height: 12px;
@@ -8,8 +11,13 @@
 
   text-decoration: none;
   text-transform: uppercase;
+  border: 2px solid $base-white;
 
   &--secondary {
+    padding: 25px 0;
+
     color: $base-blue;
+
+    border: 2px solid $base-blue;
   }
 }
