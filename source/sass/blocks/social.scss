@@ -1,0 +1,39 @@
+.social--wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @media (min-width: $tablet) {
+    gap: 15px;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 10px;
+  }
+}
+
+.social__item {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $base-white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

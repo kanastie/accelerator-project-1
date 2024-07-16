@@ -1,3 +1,19 @@
 .footer--wrapper {
+  padding: 40px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
   background-color: $bg-footer;
+
+  @media (min-width: $tablet) {
+    padding: 45px 45px 48px;
+    flex-direction: row;
+    gap: 35px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 40px 103px;
+    gap: 167.5px;
+  }
 }

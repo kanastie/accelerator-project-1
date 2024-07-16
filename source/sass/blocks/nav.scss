@@ -2,6 +2,26 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @media (min-width: $tablet) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 82px;
+  }
+}
+
+.nav__item {
+  margin-right: 15px;
+
+  @media (min-width: $tablet) {
+    margin-right: 0;
+  }
 }
 
 .nav__link {

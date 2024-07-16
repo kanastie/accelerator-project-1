@@ -17,8 +17,8 @@
     <main class="main">
       <section class="hero hero--wrapper" data-test="hero">
         <header class="hero__header header">
-          <div class="header__logo">
-            <img class="header__img" src="img/content-img/logo.svg" alt="Логотип" width="100" height="20">
+          <div class="header__logo logo">
+            <img class="logo__img" src="img/content-img/logo.svg" alt="Логотип" width="100" height="20">
           </div>
           <div class="header__tel">
             <a class="header__link" href="tel:+88005555555"> 8 800 555-55-55</a>
@@ -234,51 +234,62 @@
         <h2 class="reviews__titile">Отзывы</h2>
         <div class="slider slider--wrapper">
           <div class="slider__slide">
-            <div>
-              <img src="" alt="" width="" height="" />
-              <h3>Анна Орлова</h3>
-              <blockquote>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
-            </div>
+            <img src="img/review/review-author.png" srcset="img/review/review-author@2x.png 2x" alt="Аватарка автора отзыва" width="80" height="80" />
+            <h3>Анна Орлова</h3>
+            <blockquote>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
           </div>
+
+          <button
+            class="slider__button slider-button-prev"
+            aria-label="Посмотреть предыдущий слайд"
+          ></button>
+          <button
+            class="slider__button slider-button-next"
+            aria-label="Посмотреть следующий слайд"
+          ></button>
         </div>
 
       </section>
 
-      <section class="form form--wrapper" data-test="form">
-        <h2 class="form__title">Бесплатное занятие</h2>
-        <form action="https://echo.htmlacademy.ru/" method="post">
-          <input class="form__input input" type="text" name="name" required placeholder="Имя">
-          <input class="form__input input" type="number" name="phone" required placeholder="Телефон">
-          <button class="form__button button" type="submit">Отправить</button>
-        </form>
-      </section>
+      <div class="page-footer page-footer--wrapper">
+        <section class="form form--wrapper" data-test="form">
+          <h2 class="form__title">Бесплатное занятие</h2>
+          <form class="form__form" action="https://echo.htmlacademy.ru/" method="post">
+            <div>
+              <input class="form__input input" type="text" name="name" required placeholder="Имя">
+              <input class="form__input input" type="number" name="phone" required placeholder="Телефон">
+            </div>
+            <button class="form__button button" type="submit">Отправить</button>
+          </form>
+        </section>
 
-      <section class="contacts contacts--wrapper">
-        <h2 class="contacts__title">Контакты</h2>
-        <dl class="contacts__list">
-          <div>
-            <dt class="contacts__term">Адрес:</dt>
-            <dd class="contacts__description">г. Омск, ул. 60 лет Октября, 7</dd>
-            <dt class="contacts__term">График работы:</dt>
-            <dd class="contacts__description">Пн-Вс: с 8:00 до 22:00</dd>
-          </div>
-          <div>
-            <dt class="contacts__term">Телефон:</dt>
-            <dd class="contacts__description"><a class="" href="tel:+88005555555">8 800 555-55-55</a></dd>
-            <dt class="contacts__term">Email:</dt>
-            <dd class="contacts__description"><a href="mailto:oмск@supergym.ru">oмск@supergym.ru</a></dd>
-          </div>
-        </dl>
-      </section>
+        <section class="contacts contacts--wrapper">
+          <h2 class="contacts__title">Контакты</h2>
+          <dl class="contacts__list">
+            <div>
+              <dt class="contacts__term">Адрес:</dt>
+              <dd class="contacts__description">г. Омск, ул. 60 лет Октября, 7</dd>
+              <dt class="contacts__term">График работы:</dt>
+              <dd class="contacts__description">Пн-Вс: с 8:00 до 22:00</dd>
+            </div>
+            <div>
+              <dt class="contacts__term">Телефон:</dt>
+              <dd class="contacts__description"><a class="" href="tel:+88005555555">8 800 555-55-55</a></dd>
+              <dt class="contacts__term">Email:</dt>
+              <dd class="contacts__description"><a href="mailto:oмск@supergym.ru">oмск@supergym.ru</a></dd>
+            </div>
+          </dl>
+        </section>
+      </div>
 
     </main>
 
     <footer class="footer footer--wrapper" data-test="footer">
       <div class="logo">
-        <img class="logo__img" src="" alt="" width="" height="" />
+        <img class="logo__img" src="img/content-img/logo.svg" alt="Логотип" width="100" height="20">
       </div>
 
-      <section class="footer-nav">
+      <section class="footer-nav footer-nav--wrapper">
         <h2 class="visually-hidden">Навигация</h2>
         <nav class="nav">
           <ul class="nav__list">
@@ -301,20 +312,32 @@
         </nav>
       </section>
 
-      <section class="social">
+      <section class="social social--wrapper">
         <h2 class="visually-hidden">Наши соцсети</h2>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link" href=""></a>
-            <span class="visually-hidden">Вконтакте</span>
+            <a class="social__link" href="">
+              <svg width="12.04" height="6.94" viewBox="0 0 12.04 6.94">
+                <use href="/__spritemap#sprite-vk"></use>
+              </svg>
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href=""></a>
-            <span class="visually-hidden">Одноклассники</span>
+            <a class="social__link" href="">
+              <svg width="8.83" height="15.73" viewBox="0 0 8.83 15.73">
+                <use href="/__spritemap#sprite-ok"></use>
+              </svg>
+              <span class="visually-hidden">Одноклассники</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href=""></a>
-            <span class="visually-hidden">Реддит</span>
+            <a class="social__link" href="">
+              <svg width="13.89" height="13.89" viewBox="0 0 13.89 13.89">
+                <use href="/__spritemap#sprite-reddit"></use>
+              </svg>
+              <span class="visually-hidden">Реддит</span>
+            </a>
           </li>
         </ul>
       </section>
