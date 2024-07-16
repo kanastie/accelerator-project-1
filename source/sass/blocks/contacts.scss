@@ -8,6 +8,7 @@
 
   @media (min-width: $desktop) {
     padding: 60px 103px 71px;
+    flex-grow: 1;
   }
 }
 
@@ -58,20 +59,22 @@
   flex-direction: column;
 
   @media (min-width: $tablet) {
-    width: 190px;
+    flex-grow: 1;
   }
 }
 
 .contacts__list::after {
-  content: "";
-  width: 117px;
-  height: 1px;
-  display: block;
-  background-color: #74819c;
-  transform: rotate(-90deg);
-  position: absolute;
-  top: 57px;
-  left: 38%;
+  @media (min-width: $tablet) {
+    content: "";
+    width: 117px;
+    height: 1px;
+    display: block;
+    background-color: #74819c;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 57px;
+    left: 38%;
+  }
 }
 
 .contacts__term {

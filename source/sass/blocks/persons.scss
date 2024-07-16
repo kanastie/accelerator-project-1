@@ -1,5 +1,44 @@
 .persons--wrapper {
+  padding: 40px 15px;
+
   background-color: $base-white;
+
+  @media (min-width: $tablet) {
+    padding: 40px 45px 60px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 100px 103px;
+  }
+}
+
+.persons__title {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-family: $alumni;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 600;
+  color: $base-blue;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 46px;
+
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
+
+.persons__slider {
+  position: relative;
+}
+
+.persons__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .persons__img {
@@ -8,8 +47,9 @@
 }
 
 .persons__name {
+  position: absolute;
+  bottom: 25px;
   display: block;
-  margin-top: -49px;
 
   font-family: $roboto;
   font-size: 22px;
@@ -17,4 +57,49 @@
   font-weight: 400;
   color: $base-white;
   text-align: center;
+}
+
+.persons__slider__button {
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    width: 16px;
+    height: 32px;
+
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.persons__slider-button-prev {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) rotate(180deg);
+
+  background-image: url("../../img/sprite/arrow.svg");
+  background-size: 16px 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $desktop) {
+    left: 175px;
+  }
+}
+
+.persons__slider-button-next {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+
+  background-image: url("../../img/sprite/arrow.svg");
+  background-size: 16px 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $desktop) {
+    right: 175px;
+  }
 }
