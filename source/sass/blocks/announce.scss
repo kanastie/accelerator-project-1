@@ -6,6 +6,7 @@
   @media (min-width: $tablet) {
     padding: 60px 45px;
     display: flex;
+    justify-content: center;
   }
 
   @media (min-width: $desktop) {
@@ -34,6 +35,7 @@
 
 .announce__main {
   display: flex;
+  justify-content: space-between;
   gap: 37px;
 
   @media (min-width: $tablet) {

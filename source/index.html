@@ -177,16 +177,18 @@
 
       <section class="offers offers--wrapper" data-test="offers" id="offers">
         <h2 class="offers__title">Акции</h2>
-        <div class="offers__wrapper">
-          <div class="offers__main">
-            <span>Год</span>
-            <span>4999</span>
+        <div class="offers__container">
+          <div class="offers__main-wrapper">
+            <div>
+              <span>Год</span>
+              <span>4999</span>
+            </div>
             <p>Безлимитный абонемент в тренажёрный зал</p>
             <a class="offers__link offers__link--main" href="">Подробнее</a>
           </div>
-          <img class="offers__img" src="" alt="" width="" height="">
+          <img class="offers__img" src="img/content-img/girl-img.jpg" srcset="img/content-img/girl-img@2x.jpg 2x" alt="Фотография девушки" width="400" height="462">
         </div>
-        <div>
+        <div class="offers__add-wrapper">
           <ul class="offers__list">
             <li class="offers__item">
               <h3>Месяц бесплатно</h3>
@@ -221,7 +223,14 @@
           </ul>
           <div class="tabs__content">
             <details>
-              <summary>Как стать членом фитнес-центра?</summary>
+              <summary>Как стать членом фитнес-центра?
+                <!-- <span class="tabs__mark tabs__mark--plus">
+                  <svg width="20" height="20" viewBox="0 0 20 20" stroke="#333333">
+                    <use href="/__spritemap#sprite-plus"></use>
+                  </svg>
+                </span>
+                <span class="tabs__mark tabs__mark--minus"></span> -->
+              </summary>
               <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
             </details>
             <details>
