@@ -1,9 +1,20 @@
 .reviews--wrapper {
+  padding: 40px;
+
   background-color: $base-white;
+
+  @media (min-width: $tablet) {
+    padding: 60px 45px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 100px 103px;
+  }
 }
 
 .reviews__titile {
   margin: 0;
+  margin-bottom: 40px;
 
   font-family: $alumni;
   font-size: 32px;
@@ -13,7 +24,13 @@
   text-align: center;
 
   @media (min-width: $tablet) {
+    margin-bottom: 35px;
+
     font-size: 54px;
     line-height: 54px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 75px;
   }
 }

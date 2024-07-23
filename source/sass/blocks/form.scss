@@ -1,9 +1,42 @@
 .form--wrapper {
+  padding: 70px 15px;
+
   background-color: $base-blue;
+
+  @media (min-width: $tablet) {
+    padding: 60px 164px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 60px 103px;
+    flex-grow: 1;
+  }
+}
+
+.form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.form__form div {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 477px;
+  }
 }
 
 .form__title {
   margin: 0;
+  margin-bottom: 36px;
 
   font-family: $alumni;
   font-size: 32px;
@@ -24,6 +57,7 @@
 
 .form__input {
   padding-bottom: 4px;
+  width: 100%;
 
   font-family: $roboto;
   font-size: 14px;
@@ -32,7 +66,12 @@
   color: $base-white;
 
   border: none;
+  border-bottom: 1px solid #74819c;
   background-color: transparent;
+}
+
+.form__input::placeholder {
+  color: #74819c;
 }
 
 .form__input[type="number"]::-webkit-outer-spin-button,
@@ -41,6 +80,8 @@
 }
 
 .form__button {
+  padding: 22px;
+
   font-family: $roboto;
   font-size: 12px;
   line-height: 12px;
@@ -53,4 +94,33 @@
   text-transform: uppercase;
   box-sizing: border-box;
   cursor: pointer;
+}
+
+.form__button:hover {
+  color: $base-white;
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  border: 2px solid;
+  border-image-slice: 4;
+  border-image-source: linear-gradient(97.05deg, #d10a42 17.6%, #00359f 95.31%);
+}
+
+.form__button:focus-visible {
+  color: $base-white;
+  border: 2px solid $base-blue;
+  background: linear-gradient(
+    97.05deg,
+    rgba(237, 2, 51, 0.8) 17.6%,
+    rgba(0, 62, 183, 0.8) 95.31%
+  );
+  outline: none;
+}
+
+.form__button:active {
+  color: rgba(255, 255, 255, 0.7);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  border: 2px solid $base-blue;
+}
+
+.form__button:disabled {
+  opacity: 30%;
 }

@@ -1,0 +1,149 @@
+.video-block__preview {
+  // display: block;
+  // margin: 0 auto 40px;
+
+  // width: 320px;
+  // height: 170px;
+  // object-fit: cover;
+
+  // @media (min-width: $tablet) {
+  //   margin-bottom: 0;
+  //   width: 270px;
+  //   height: 170px;
+
+  //   position: absolute;
+  //   bottom: 35px;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  // }
+
+  // @media (min-width: $desktop) {
+  //   width: 360px;
+  //   height: 230px;
+
+  //   bottom: 125px;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  // }
+}
+
+.video-block__play {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    top: 50%;
+  }
+
+  @media (min-width: $desktop) {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+.video-block__play::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 72px;
+  height: 72px;
+
+  border: 2px solid $bg-banner;
+  border-radius: 50%;
+  background-color: transparent;
+  opacity: 20%;
+
+  @media (min-width: $desktop) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.video-block__play:hover {
+  background: $base-white;
+}
+
+.video-block__play:hover svg {
+  fill: rgba(16, 38, 84, 0.6);
+}
+
+.video-block__play:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 72px;
+  height: 72px;
+
+  border: 2px solid $base-blue;
+  opacity: 60%;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.video-block__play:focus-visible {
+  background: #c8c9cc;
+  outline: none;
+}
+
+.video-block__play:focus-visible::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 72px;
+  height: 72px;
+
+  border: 2px solid $base-blue;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.video-block__play:focus-visible svg {
+  fill: $base-blue;
+  outline: none;
+}
+
+.video-block__play:active {
+  background: $base-white;
+}
+
+.video-block__play:active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 72px;
+  height: 72px;
+
+  border: 2px solid $base-blue;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.video-block__play:active svg {
+  fill: $base-blue;
+}
+
+.video-block__play:disabled {
+  background: $base-white;
+}
+
+.video-block__play:disabled svg {
+  fill: $base-blue;
+  opacity: 40%;
+}
+
+.video-block__play svg {
+  padding-left: 3px;
+}

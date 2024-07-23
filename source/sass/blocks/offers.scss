@@ -1,9 +1,36 @@
 .offers--wrapper {
   background-color: $base-white;
+
+  @media (min-width: $tablet) {
+    padding: 60px 45px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 100px 103px;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 40px;
+  }
+}
+
+.offers__container {
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+    display: flex;
+    width: fit-content;
+  }
+
+  @media (min-width: $desktop) {
+    width: 560px;
+  }
 }
 
 .offers__title {
+  padding: 40px 15px 0;
   margin: 0;
+  margin-bottom: 40px;
 
   font-family: $alumni;
   font-size: 32px;
@@ -13,18 +40,54 @@
   text-align: center;
 
   @media (min-width: $tablet) {
+    padding: 0;
+    margin-bottom: 35px;
+
     font-size: 42px;
     line-height: 42px;
   }
 
   @media (min-width: $desktop) {
+    margin-bottom: 70px;
+    grid-column: 1 / -1;
+
     font-size: 54px;
     line-height: 54px;
   }
 }
 
-.offers__main {
+.offers__main-wrapper {
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+
   background-color: $bg-banner;
+
+  @media (min-width: $tablet) {
+    padding: 40px 25px;
+
+    align-items: start;
+    gap: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 40px 45px;
+  }
+}
+
+.offers__main-wrapper div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+
+  @media (min-width: $tablet) {
+    align-items: start;
+    gap: 20px;
+  }
 }
 
 .offers span:nth-of-type(1) {
@@ -66,14 +129,20 @@
   line-height: 20px;
   font-weight: 300;
   color: $base-white;
+  text-align: center;
 
   @media (min-width: $tablet) {
+    flex-grow: 1;
+
     font-size: 18px;
     line-height: 24px;
+    text-align: left;
   }
 }
 
 .offers__link {
+  position: relative;
+
   font-family: $roboto;
   font-size: 14px;
   line-height: 14px;
@@ -81,7 +150,7 @@
   color: $bg-add-blue;
   text-align: center;
 
-  text-decoration: underline;
+  text-decoration: none;
   text-transform: uppercase;
 
   &--main {
@@ -89,10 +158,126 @@
   }
 }
 
+.offers__link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  background-color: $base-blue;
+}
+
+.offers__link--main::after {
+  background-color: $base-white;
+}
+
+.offers__link:hover {
+  opacity: 80%;
+}
+
+.offers__link:focus-visible {
+  position: relative;
+  outline: none;
+}
+
+.offers__link:focus::after {
+  content: "";
+  width: 93px;
+  height: 34px;
+  border: 1px solid $border-add-color;
+  background-color: transparent;
+  position: absolute;
+  top: -75%;
+  left: -15%;
+}
+
+.offers__link:disabled {
+  opacity: 30%;
+}
+
+.offers__link--main:focus {
+  position: relative;
+  outline: none;
+}
+
+.offers__link--main:focus::after {
+  border: 1px solid $base-white;
+}
+
+.offers__img {
+  margin: 0 auto;
+  display: block;
+  height: 360px;
+  object-fit: cover;
+  object-position: top;
+
+  @media (min-width: $tablet) {
+    height: 462px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 280px;
+    height: 460px;
+  }
+}
+
+.offers__add-wrapper {
+  padding: 40px 15px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    padding-top: 35px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
 .offers__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: column;
+    align-items: flex-end;
+    flex-grow: 1;
+  }
+}
+
+.offers__item {
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  border: 7px solid;
+  border-image-slice: 7;
+  border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+
+  @media (min-width: $tablet) {
+    width: 100%;
+
+    align-items: start;
+    gap: 10px;
+  }
 }
 
 .offers__list h3 {
@@ -124,6 +309,8 @@
   text-align: center;
 
   @media (min-width: $tablet) {
+    flex-grow: 1;
+
     font-size: 16px;
     line-height: 24px;
     text-align: left;

@@ -1,10 +1,41 @@
 .tabs__list {
   margin: 0;
+  margin-bottom: 35px;
   padding: 0;
   list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+    width: 260px;
+    align-content: flex-start;
+  }
+}
+
+.tabs__item {
+  width: 48%;
+
+  @media (min-width: $tablet) {
+    width: 162px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+  }
 }
 
 .tabs__button {
+  padding: 14px 22px;
+  width: 100%;
+
   font-family: $roboto;
   font-size: 16px;
   line-height: 16px;
@@ -28,13 +59,44 @@
   }
 }
 
+.tabs__button:hover {
+  border: 1px solid $base-blue;
+}
+
+.tabs__button:focus-visible {
+  border: 1px solid $base-blue;
+  outline: none;
+}
+
+.tabs__button:active {
+  color: $base-white;
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+
+  border: transparent;
+}
+
+.tabs__button:disabled {
+  color: #c8c9cc;
+}
+
+.tabs__content {
+  @media (min-width: $desktop) {
+    width: 860px;
+  }
+}
+
 .tabs__content details summary::marker {
   display: none;
   content: "";
 }
 
 .tabs__content summary {
+  position: relative;
   margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   font-family: $roboto;
   font-size: 20px;
@@ -55,7 +117,104 @@
   }
 }
 
+.tabs__content summary span:first-of-type {
+  width: fit-content;
+}
+
+.tabs__mark {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+  border: 1px solid $border-add-color;
+  border-radius: 50%;
+
+  @media (min-width: $tablet) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.tabs__content details[open] summary .tabs__mark {
+  background-color: $border-add-color;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 1H10H0' stroke='%23ffffff'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet) {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='2' viewBox='0 0 20 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 1H10H0' stroke='%23ffffff'/%3E%3C/svg%3E");
+  }
+}
+
+.tabs__content details[open] summary .tabs__mark svg,
+.tabs__content summary:hover .tabs__mark svg,
+.tabs__content summary:focus-within .tabs__mark svg {
+  display: none;
+}
+
+.tabs__mark svg {
+  width: 14px;
+  height: 14px;
+
+  @media (min-width: $tablet) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+summary:hover .tabs__mark {
+  background-color: $border-add-color;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 0V7M7 14V7M7 7H14M7 7H0' stroke='%23ffffff'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet) {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 0V10M10 20V10M10 10H20M10 10H0' stroke='%23ffffff'/%3E%3C/svg%3E");
+  }
+}
+
+summary:focus-within .tabs__mark {
+  background-color: #74819c;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 0V7M7 14V7M7 7H14M7 7H0' stroke='%23ffffff'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet) {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 0V10M10 20V10M10 10H20M10 10H0' stroke='%23ffffff'/%3E%3C/svg%3E");
+  }
+}
+
+summary:disabled .tabs__mark {
+  opacity: 30%;
+}
+
+.tabs__content details {
+  padding: 20px 0;
+
+  border-top: 1px solid #74819c;
+
+  @media (min-width: $tablet) {
+    padding: 23px 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 31px 0;
+  }
+}
+
+.tabs__content details:last-child {
+  padding: 23px 0;
+
+  border-bottom: 1px solid #74819c;
+}
+
 .tabs__content p {
+  padding-top: 20px;
+  padding-right: 52px;
   margin: 0;
 
   font-family: $roboto;
@@ -65,7 +224,15 @@
   color: $base-blue;
 
   @media (min-width: $tablet) {
+    padding-top: 10px;
+    padding-right: 118px;
+
     font-size: 18px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 23px;
+    padding-right: 200px;
   }
 }

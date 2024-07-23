@@ -1,9 +1,34 @@
 .about--wrapper {
   background-color: $base-white;
+
+  @media (min-width: $tablet) {
+    padding: 60px 45px 120px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 120px 103px 240px;
+
+    display: flex;
+    gap: 145px;
+  }
+}
+
+.about__text {
+  padding: 40px 15px 0;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 355px;
+  }
 }
 
 .about__title {
   margin: 0;
+  margin-bottom: 12px;
 
   font-family: $alumni;
   font-size: 32px;
@@ -12,12 +37,17 @@
   color: $base-blue;
 
   @media (min-width: $tablet) {
+    padding: 0;
+    margin: 0 auto 20px;
+
     font-size: 42px;
     line-height: 42px;
     text-align: center;
   }
 
   @media (min-width: $desktop) {
+    margin: 0 0 25px;
+
     font-size: 54px;
     line-height: 54px;
     text-align: left;
@@ -25,6 +55,9 @@
 }
 
 .about__slogan {
+  display: block;
+  margin-bottom: 36px;
+
   font-family: $roboto;
   font-size: 18px;
   line-height: 20px;
@@ -32,11 +65,16 @@
   color: $base-blue;
 
   @media (min-width: $tablet) {
+    padding: 0;
+    margin: 0 auto 36px;
+
     font-size: 20px;
     text-align: center;
   }
 
   @media (min-width: $desktop) {
+    margin: 0 0 95px;
+
     font-size: 22px;
     line-height: 22px;
     text-align: left;
@@ -44,8 +82,9 @@
 }
 
 .about p {
-  margin: 0;
   padding-bottom: 8px;
+  margin: 0;
+  margin-bottom: 28px;
 
   font-family: $roboto;
   font-size: 14px;
@@ -54,18 +93,70 @@
   color: $base-blue;
 
   @media (min-width: $tablet) {
+    padding: 0 0 8px;
+    margin: 0 auto 28px;
+    width: 502px;
+
     font-size: 16px;
     line-height: 24px;
     text-align: center;
   }
 
   @media (min-width: $desktop) {
+    margin: 0;
+    width: fit-content;
+
     text-align: left;
   }
 }
 
-.about p:nth-of-type(2n + 1) {
+.about p:not(:nth-of-type(1)) {
   @media (max-width: $desktop) {
     display: none;
+  }
+}
+
+.about__img {
+  display: block;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.about__img img {
+  display: block;
+  margin: 0 auto;
+}
+
+.about__video {
+  position: relative;
+
+  display: block;
+  margin: 0 auto 40px;
+
+  width: 320px;
+  height: 170px;
+  object-fit: cover;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+    width: 270px;
+    height: 170px;
+
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: $desktop) {
+    width: 360px;
+    height: 230px;
+
+    bottom: 125px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
