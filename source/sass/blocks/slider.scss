@@ -5,6 +5,7 @@
 .slider__slide {
   padding: 30px 25px 22px;
   margin: 0 auto;
+  width: fit-content;
 
   display: flex;
   flex-direction: column;
@@ -180,6 +181,6 @@
   }
 }
 
-.persons__slider__button:disabled {
+.slider__button:disabled {
   opacity: 30%;
 }

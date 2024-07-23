@@ -122,8 +122,8 @@
 
       <section class="persons persons--wrapper" data-test="juri">
         <h2 class="persons__title">Жюри</h2>
-        <div class="persons__swiper-wrapper">
-          <div class="swiper">
+        <div class="persons__swiper-container">
+          <div class="swiper swiper--jury">
             <div class="persons__slider swiper-wrapper">
               <div class="persons__slide swiper-slide">
                 <img class="persons__img" src="img/jury/pavlova.jpg" srcset="img/jury/pavlova@2x.jpg 2x" alt="Фотография члена жирю" width="260" height="300">
@@ -311,11 +311,20 @@
 
       <section class="reviews reviews--wrapper" data-test="reviews">
         <h2 class="reviews__titile">Отзывы</h2>
-        <div class="slider slider--wrapper">
-          <div class="slider__slide">
-            <img src="img/review/review-author.png" srcset="img/review/review-author@2x.png 2x" alt="Аватарка автора отзыва" width="80" height="80" />
-            <h3>Анна Орлова</h3>
-            <blockquote>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
+        <div class="reviews__swipper-container">
+          <div class="swiper swiper--faq">
+            <div class="slider slider--wrapper swiper-wrapper">
+              <div class="slider__slide swiper-slide">
+                <img src="img/review/review-author.png" srcset="img/review/review-author@2x.png 2x" alt="Аватарка автора отзыва" width="80" height="80" />
+                <h3>Анна Орлова</h3>
+                <blockquote>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
+              </div>
+              <div class="slider__slide swiper-slide">
+                <img src="img/review/review-author.png" srcset="img/review/review-author@2x.png 2x" alt="Аватарка автора отзыва" width="80" height="80" />
+                <h3>Анна Орлова</h3>
+                <blockquote>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
+              </div>
+            </div>
           </div>
 
           <button class="slider__button slider-button-prev" aria-label="Посмотреть предыдущий слайд">
