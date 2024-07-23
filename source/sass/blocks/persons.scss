@@ -1,5 +1,6 @@
 .persons--wrapper {
   padding: 40px 15px;
+  min-width: 0;
 
   background-color: $base-white;
 
@@ -31,11 +32,18 @@
   }
 }
 
+.persons__swiper-wrapper {
+  position: relative;
+}
+
 .persons__slider {
   position: relative;
 }
 
+
 .persons__slide {
+  width: auto;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,6 +73,7 @@
   }
 
   @media (min-width: $tablet) {
+    z-index: 1;
     position: absolute;
     width: 50px;
     height: 50px;
@@ -127,7 +136,7 @@
 
 .persons__slider-button-prev {
   top: 50%;
-  left: 0;
+  left: -10px;
   transform: translateY(-50%) rotate(180deg);
 
   background-image: url("../../img/sprite/arrow.svg");
@@ -136,7 +145,7 @@
   background-position: center;
 
   @media (min-width: $desktop) {
-    left: 175px;
+    left: -70px;
   }
 }
 
@@ -146,7 +155,7 @@
 
 .persons__slider-button-next {
   top: 50%;
-  right: 0;
+  right: -10px;
   transform: translateY(-50%);
 
   background-image: url("../../img/sprite/arrow.svg");
@@ -155,6 +164,6 @@
   background-position: center;
 
   @media (min-width: $desktop) {
-    right: 175px;
+    right: -70px;
   }
 }

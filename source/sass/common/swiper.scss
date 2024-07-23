@@ -1,0 +1,9 @@
+.swiper {
+  @media (min-width: $tablet) {
+    width: 560px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1160px;
+  }
+}

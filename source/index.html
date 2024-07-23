@@ -8,11 +8,6 @@
   </head>
 
   <body class="page-body">
-    <!-- пример использования спрайта -->
-    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт" />
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg> -->
 
     <main class="main">
       <section class="hero hero--wrapper" data-test="hero">
@@ -127,10 +122,42 @@
 
       <section class="persons persons--wrapper" data-test="juri">
         <h2 class="persons__title">Жюри</h2>
-        <div class="persons__slider">
-          <div class="persons__slide">
-            <img class="persons__img" src="img/jury/pavlova.jpg" srcset="img/jury/pavlova@2x.jpg 2x" alt="Фотография члена жирю" width="260" height="300">
-            <span class="persons__name">Анна Павлова</span>
+        <div class="persons__swiper-wrapper">
+          <div class="swiper">
+            <div class="persons__slider swiper-wrapper">
+              <div class="persons__slide swiper-slide">
+                <img class="persons__img" src="img/jury/pavlova.jpg" srcset="img/jury/pavlova@2x.jpg 2x" alt="Фотография члена жирю" width="260" height="300">
+                <span class="persons__name">Анна Павлова</span>
+              </div>
+              <div class="persons__slide swiper-slide">
+                <img class="persons__img" src="img/jury/lavrov.jpg" srcset="img/jury/lavrov@2x.jpg 2x" alt="Фотография члена жирю" width="260" height="300">
+                <span class="persons__name">Алексей Лавров</span>
+              </div>
+              <div class="persons__slide swiper-slide">
+                <img class="persons__img" src="img/jury/pashkov.jpg" srcset="img/jury/pashkov@2x.jpg 2x" alt="Фотография члена жирю" width="260" height="300">
+                <span class="persons__name">Александр Пашков</span>
+              </div>
+              <div class="persons__slide swiper-slide">
+                <img class="persons__img" src="img/jury/ketova.jpg" srcset="img/jury/ketova@2x.jpg 2x" alt="Фотография члена жирю" width="260" height="300">
+                <span class="persons__name">Мария Кетова</span>
+              </div>
+              <div class="persons__slide swiper-slide">
+                <img class="persons__img" src="img/jury/pavlova.jpg" srcset="img/jury/pavlova@2x.jpg 2x" alt="Фотография члена жирю" width="260" height="300">
+                <span class="persons__name">Анна Павлова</span>
+              </div>
+              <div class="persons__slide swiper-slide">
+                <img class="persons__img" src="img/jury/lavrov.jpg" srcset="img/jury/lavrov@2x.jpg 2x" alt="Фотография члена жирю" width="260" height="300">
+                <span class="persons__name">Алексей Лавров</span>
+              </div>
+              <div class="persons__slide swiper-slide">
+                <img class="persons__img" src="img/jury/pashkov.jpg" srcset="img/jury/pashkov@2x.jpg 2x" alt="Фотография члена жирю" width="260" height="300">
+                <span class="persons__name">Александр Пашков</span>
+              </div>
+              <div class="persons__slide swiper-slide">
+                <img class="persons__img" src="img/jury/ketova.jpg" srcset="img/jury/ketova@2x.jpg 2x" alt="Фотография члена жирю" width="260" height="300">
+                <span class="persons__name">Мария Кетова</span>
+              </div>
+            </div>
           </div>
 
           <button class="persons__slider__button persons__slider-button-prev" aria-label="Посмотреть предыдущий слайд">
@@ -138,6 +165,7 @@
           <button class="persons__slider__button persons__slider-button-next" aria-label="Посмотреть следующий слайд">
           </button>
         </div>
+
       </section>
 
       <section class="features features--wrapper" data-test="features">
