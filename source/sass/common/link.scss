@@ -21,3 +21,51 @@
     border: 2px solid $base-blue;
   }
 }
+
+.link:hover {
+  color: $accent-blue;
+  background-color: $base-white;
+}
+
+.link:focus-visible {
+  color: $accent-blue;
+  border: 2px solid #000000;
+  background-color: rgba(255, 255, 255, 0.8);
+  outline: none;
+}
+
+.link:active {
+  color: $base-blue;
+  background-color: $base-white;
+}
+
+.link:disabled {
+  opacity: 50%;
+}
+
+.link--secondary:hover {
+  color: $base-white;
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  border: 2px solid $base-white;
+}
+
+.link--secondary:focus-visible {
+  color: $base-white;
+  border: 2px solid #000000;
+  background: linear-gradient(
+    97.05deg,
+    rgba(237, 2, 51, 0.8) 17.6%,
+    rgba(0, 62, 183, 0.8) 95.31%
+  );
+  outline: none;
+}
+
+.link--secondary:active {
+  color: rgba(255, 255, 255, 0.7);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  border: 2px solid $base-white;
+}
+
+.link--secondary:disabled {
+  opacity: 30%;
+}

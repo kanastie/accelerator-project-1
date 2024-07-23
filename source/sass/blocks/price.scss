@@ -117,6 +117,7 @@
   &--active {
     color: $base-blue;
     position: relative;
+    cursor: default;
   }
 }
 
@@ -128,6 +129,62 @@
   position: absolute;
   bottom: -2px;
   background-color: $border-tab-color;
+}
+
+.price__tab:hover {
+  position: relative;
+  color: rgba(16, 38, 84, 0.7);
+}
+
+.price__tab:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: -2px;
+  background-color: #787878;
+}
+
+.price__tab:focus-visible {
+  position: relative;
+  color: $base-blue;
+  outline: none;
+}
+
+.price__tab:focus-visible::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: -2px;
+  background-color: $base-blue;
+}
+
+.price__tab:active {
+  position: relative;
+  color: $base-blue;
+}
+
+.price__tab:active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: -2px;
+  background-color: $border-tab-color;
+}
+
+.price__tab:disabled {
+  opacity: 30%;
+}
+
+.price__tab--active:hover,
+.price__tab--active:focus,
+.price__tab--active:active {
+  pointer-events: none;
 }
 
 .price__content {

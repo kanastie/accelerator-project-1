@@ -37,3 +37,33 @@
   justify-content: center;
   align-items: center;
 }
+
+.social__item:hover {
+  background-color: #74819c;
+}
+
+.social__item:hover svg {
+  fill: $base-white;
+}
+
+.social__item:focus-within {
+  background-color: $accent-blue;
+  outline: none;
+}
+
+.social__item:focus-within svg {
+  fill: $base-white;
+  outline: none;
+}
+
+.social__item:active {
+  background-color: $base-blue;
+}
+
+.social__item:active svg {
+  fill: $base-white;
+}
+
+.social__item:disabled {
+  opacity: 30%;
+}
