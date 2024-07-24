@@ -15,16 +15,7 @@ export const swiperFaq = new Swiper('.swiper--faq', {
   },
 
   breakpoints: {
-    320: {
-      // slidesPerView: 1,
-      // width: 190,
-      // spaceBetween: 40,
-    },
-    768: {
-      // slidesPerView: 1,
-    },
     1366: {
-      // slidesPerView: 1,
       touchRatio: 0,
     }
   },
