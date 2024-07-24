@@ -340,8 +340,12 @@
           <h2 class="form__title">Бесплатное занятие</h2>
           <form class="form__form" action="https://echo.htmlacademy.ru/" method="post">
             <div>
-              <input class="form__input input" type="text" name="name" required placeholder="Имя">
-              <input class="form__input input" type="number" name="phone" required placeholder="Телефон">
+              <div class="form__input-wrapper">
+                <input class="form__input input" type="text" name="name" pattern="^[A-ZА_Я][a-zа-яё\s]+$" title="Напишите своё имя с заглавной буквы" required placeholder="Имя">
+              </div>
+              <div class="form__input-wrapper">
+                <input class="form__input input" type="number" name="phone" title="Используй только цифры" required placeholder="Телефон">
+              </div>
             </div>
             <button class="form__button button" type="submit">Отправить</button>
           </form>
