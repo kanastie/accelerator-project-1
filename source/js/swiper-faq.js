@@ -10,8 +10,8 @@ export const swiperFaq = new Swiper('.swiper--faq', {
   spaceBetween: 40,
 
   navigation: {
-    nextEl: '.slider-button-next',
-    prevEl: '.slider-button-prev',
+    nextEl: '.reviews__button--next',
+    prevEl: '.reviews__button--prev',
   },
 
   breakpoints: {

@@ -8,8 +8,8 @@ export const swiperJury = new Swiper('.swiper--jury', {
   loop: true,
 
   navigation: {
-    nextEl: '.persons__slider-button-next',
-    prevEl: '.persons__slider-button-prev',
+    nextEl: '.persons__slider-button--next',
+    prevEl: '.persons__slider-button--prev',
   },
 
   breakpoints: {
