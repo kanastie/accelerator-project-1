@@ -55,7 +55,14 @@
   }
 }
 
+.form__input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
 .form__input {
+  position: relative;
+  z-index: 1;
   padding-bottom: 4px;
   width: 100%;
 
@@ -77,6 +84,38 @@
 .form__input[type="number"]::-webkit-outer-spin-button,
 .form__input[type="number"]::-webkit-inner-spin-button {
   appearance: none;
+}
+
+.form__input:hover {
+  border-bottom: 1px solid $base-white;
+  color: $base-white;
+}
+
+.form__input:focus-visible {
+  outline: none;
+  border-bottom: 1px solid transparent;
+}
+
+.form__input-wrapper:focus-within::after {
+  content: "";
+  display: block;
+  height: 36px;
+  width: 100%;
+  position: absolute;
+  top: -22%;
+  border: 1px solid $base-white;
+
+  @media (min-width: $tablet) {
+    min-width: 205px;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 223.5px;
+  }
+}
+
+.form__input:disabled {
+  opacity: 40%;
 }
 
 .form__button {

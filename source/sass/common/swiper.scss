@@ -1,0 +1,19 @@
+.swiper--jury {
+  @media (min-width: $tablet) {
+    width: 560px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1160px;
+  }
+}
+
+.swiper--faq {
+  @media (min-width: $tablet) {
+    width: 500px;
+  }
+}
+
+.swiper--faq .swiper-slide {
+  box-sizing: border-box;
+}

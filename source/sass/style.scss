@@ -2,6 +2,7 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+@import "swiper/css";
 
 /* GLOBAL */
 @import "common/variables";
@@ -9,6 +10,7 @@
 @import "common/fonts";
 @import "common/visually-hidden";
 @import "common/link";
+@import "common/swiper.scss";
 
 /* BLOCKS */
 @import "blocks/hero";
