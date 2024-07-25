@@ -104,8 +104,6 @@
   font-weight: 400;
   color: $base-blue;
 
-  cursor: pointer;
-
   @media (min-width: $tablet) {
     font-size: 22px;
     line-height: 22px;
@@ -132,6 +130,7 @@
   background-color: transparent;
   border: 1px solid $border-add-color;
   border-radius: 50%;
+  cursor: pointer;
 
   @media (min-width: $tablet) {
     width: 40px;
