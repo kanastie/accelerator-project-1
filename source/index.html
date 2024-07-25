@@ -8,12 +8,17 @@
   </head>
 
   <body class="page-body">
-
     <main class="main">
       <section class="hero hero--wrapper" data-test="hero">
         <header class="hero__header header">
           <div class="header__logo logo">
-            <img class="logo__img" src="img/content-img/logo.svg" alt="Логотип" width="100" height="20">
+            <img
+              class="logo__img"
+              src="img/content-img/logo.svg"
+              alt="Логотип"
+              width="100"
+              height="20"
+            />
           </div>
           <div class="header__tel">
             <a class="header__link" href="tel:+88005555555">8 800 555-55-55</a>
@@ -31,9 +36,32 @@
             <a class="link hero__link" href="#">Купить абонемент</a>
           </div>
           <picture class="hero__img">
-            <source media="(min-width: 1366px)" srcset="img/content-img/hero-img-desktop.jpg, img/content-img/hero-img-desktop@2x.jpg 2x" type="image/jpeg" width="500" height="524"/>
-            <source media="(min-width: 768px)" srcset="img/content-img/hero-img-tablet.jpg, img/content-img/hero-img-tablet@2x.jpg 2x" type="image/jpeg" width="324" height="390"/>
-            <img  src="img/content-img/hero-img.jpg" alt="Посетитель фитнесс-центра" width="324" height="390" />
+            <source
+              media="(min-width: 1366px)"
+              srcset="
+                img/content-img/hero-img-desktop.jpg,
+                img/content-img/hero-img-desktop@2x.jpg 2x
+              "
+              type="image/jpeg"
+              width="500"
+              height="524"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                img/content-img/hero-img-tablet.jpg,
+                img/content-img/hero-img-tablet@2x.jpg 2x
+              "
+              type="image/jpeg"
+              width="324"
+              height="390"
+            />
+            <img
+              src="img/content-img/hero-img.jpg"
+              alt="Посетитель фитнесс-центра"
+              width="324"
+              height="390"
+            />
           </picture>
         </div>
       </section>
@@ -55,26 +83,67 @@
         </div>
         <div>
           <picture class="about__img">
-            <source media="(min-width: 1366px)" srcset="img/content-img/about-img-desktop.jpg, img/content-img/about-img-desktop@2x.jpg 2x" type="image/jpeg" width="660" height="400"/>
-            <source media="(min-width: 768px)" srcset="img/content-img/about-img-tablet.jpg, img/content-img/about-img-tablet@2x.jpg 2x" type="image/jpeg" width="678" height="345"/>
-            <img src="img/content-img/about-img.jpg" srcset="img/content-img/about-img@2x.jpg 2x" alt="Фотография тренажёрного зала" width="320" height="280" />
+            <source
+              media="(min-width: 1366px)"
+              srcset="
+                img/content-img/about-img-desktop.jpg,
+                img/content-img/about-img-desktop@2x.jpg 2x
+              "
+              type="image/jpeg"
+              width="660"
+              height="400"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                img/content-img/about-img-tablet.jpg,
+                img/content-img/about-img-tablet@2x.jpg 2x
+              "
+              type="image/jpeg"
+              width="678"
+              height="345"
+            />
+            <img
+              src="img/content-img/about-img.jpg"
+              srcset="img/content-img/about-img@2x.jpg 2x"
+              alt="Фотография тренажёрного зала"
+              width="320"
+              height="280"
+            />
           </picture>
           <div class="about__video video-block">
-            <img class="video-block__preview" src="img/content-img/video.jpg" srcset="img/content-img/video@2x.jpg 2x" alt="Видео" width="360" height="230" />
-            <button class="video-block__play" type="button" aria-label="Включить видео.">
-              <svg width="9" height="12" viewBox="0 0 9 12" fill="#ffffff">
+            <img
+              src="img/content-img/video.jpg"
+              srcset="img/content-img/video@2x.jpg 2x"
+              alt="Стоп-кадр видео"
+              width="360"
+              height="230"
+            />
+            <button
+              class="video-block__play"
+              type="button"
+              aria-label="Включить видео."
+            >
+              <svg
+                width="9"
+                height="12"
+                viewBox="0 0 9 12"
+                fill="#ffffff"
+                role="img"
+              >
                 <use href="/__spritemap#sprite-play"></use>
               </svg>
             </button>
           </div>
-
         </div>
       </section>
 
       <section class="price price--wrapper" data-test="price" id="price">
         <h2 class="price__title">Абонементы</h2>
         <div class="price__tabs">
-          <button class="price__tab price__tab--active" type="button">1 месяц</button>
+          <button class="price__tab price__tab--active" type="button">
+            1 месяц
+          </button>
           <button class="price__tab" type="button">6 месяцев</button>
           <button class="price__tab" type="button">12 месяцев</button>
         </div>
@@ -82,18 +151,64 @@
           <li class="price__item">
             <h3 class="price__headling">С тренером</h3>
             <p class="price__description">12 занятий</p>
-            <span>5000 <img src="" alt="" width="" height=""> </img></span>
+            <div class="price__price-wrapper price__price-wrapper--first">
+              <span>5000</span>
+              <div>
+                <svg
+                  width="14"
+                  height="20"
+                  viewBox="0 0 14 20"
+                  role="img"
+                  focusable="false"
+                  aria-labelledby="rubl"
+                >
+                  <title id="rubl">Рублей</title>
+                  <use href="/__spritemap#sprite-rubl"></use>
+                </svg>
+              </div>
+            </div>
             <a class="link link--secondary" href="#">Купить абонемент</a>
           </li>
           <li class="price__item">
             <h3 class="price__headling">Дневной</h3>
             <p class="price__description">с 8:00 до 17:00</p>
-            <span>1700 <img> </img></span>
-            <a class="link link--secondary" href="#">Купить абонемент</a></li>
+            <div class="price__price-wrapper price__price-wrapper--second">
+              <span>1700</span>
+              <div>
+                <svg
+                  width="14"
+                  height="20"
+                  viewBox="0 0 14 20"
+                  role="img"
+                  focusable="false"
+                  aria-labelledby="rubl"
+                >
+                  <title id="rubl">Рублей</title>
+                  <use href="/__spritemap#sprite-rubl"></use>
+                </svg>
+              </div>
+            </div>
+            <a class="link link--secondary" href="#">Купить абонемент</a>
+          </li>
           <li class="price__item">
             <h3 class="price__headling">Полный день</h3>
             <p class="price__description">с 8:00 до 22:00</p>
-            <span>2700 <img> </img></span>
+            <div class="price__price-wrapper price__price-wrapper--third">
+              <span>2700</span>
+              <div>
+                <svg
+                  width="14"
+                  height="20"
+                  viewBox="0 0 14 20"
+                  role="img"
+                  focusable="false"
+                  aria-labelledby="rubl"
+                >
+                  <title id="rubl">Рублей</title>
+                  <use href="/__spritemap#sprite-rubl"></use>
+                </svg>
+              </div>
+            </div>
             <a class="link link--secondary" href="#">Купить абонемент</a>
           </li>
         </ul>
@@ -106,7 +221,9 @@
             <dl class="announce__timetable">
               <div class="announce__item">
                 <dt class="announce__term">Дата</dt>
-                <dd class="announce__desscription">7 <span>Марта 2019</span></dd>
+                <dd class="announce__desscription">
+                  7 <span>Марта 2019</span>
+                </dd>
               </div>
               <div class="announce__item">
                 <dt class="announce__term">Время</dt>
@@ -117,7 +234,14 @@
           <p class="announce__text">Ежегодные соревнования по CrossFit</p>
           <a class="link" href="#">Заполнить заявку</a>
         </div>
-        <img class="announce__img" src="img/content-img/games.jpg" srcset="img/content-img/games@2x.jpg 2x" alt="Игрок Супер-игр" width="660" height="500">
+        <img
+          class="announce__img"
+          src="img/content-img/games.jpg"
+          srcset="img/content-img/games@2x.jpg 2x"
+          alt="Игрок Супер-игр"
+          width="660"
+          height="500"
+        />
       </section>
 
       <section class="persons persons--wrapper" data-test="juri">
@@ -126,46 +250,107 @@
           <div class="swiper swiper--jury">
             <div class="persons__slider swiper-wrapper">
               <div class="persons__slide swiper-slide">
-                <img class="persons__img" src="img/jury/pavlova.jpg" srcset="img/jury/pavlova@2x.jpg 2x" alt="Фотография члена жирю" width="260" height="300">
+                <img
+                  class="persons__img"
+                  src="img/jury/pavlova.jpg"
+                  srcset="img/jury/pavlova@2x.jpg 2x"
+                  alt="Фотография члена жирю"
+                  width="260"
+                  height="300"
+                />
                 <span class="persons__name">Анна Павлова</span>
               </div>
               <div class="persons__slide swiper-slide">
-                <img class="persons__img" src="img/jury/lavrov.jpg" srcset="img/jury/lavrov@2x.jpg 2x" alt="Фотография члена жирю" width="260" height="300">
+                <img
+                  class="persons__img"
+                  src="img/jury/lavrov.jpg"
+                  srcset="img/jury/lavrov@2x.jpg 2x"
+                  alt="Фотография члена жирю"
+                  width="260"
+                  height="300"
+                />
                 <span class="persons__name">Алексей Лавров</span>
               </div>
               <div class="persons__slide swiper-slide">
-                <img class="persons__img" src="img/jury/pashkov.jpg" srcset="img/jury/pashkov@2x.jpg 2x" alt="Фотография члена жирю" width="260" height="300">
+                <img
+                  class="persons__img"
+                  src="img/jury/pashkov.jpg"
+                  srcset="img/jury/pashkov@2x.jpg 2x"
+                  alt="Фотография члена жирю"
+                  width="260"
+                  height="300"
+                />
                 <span class="persons__name">Александр Пашков</span>
               </div>
               <div class="persons__slide swiper-slide">
-                <img class="persons__img" src="img/jury/ketova.jpg" srcset="img/jury/ketova@2x.jpg 2x" alt="Фотография члена жирю" width="260" height="300">
+                <img
+                  class="persons__img"
+                  src="img/jury/ketova.jpg"
+                  srcset="img/jury/ketova@2x.jpg 2x"
+                  alt="Фотография члена жирю"
+                  width="260"
+                  height="300"
+                />
                 <span class="persons__name">Мария Кетова</span>
               </div>
               <div class="persons__slide swiper-slide">
-                <img class="persons__img" src="img/jury/pavlova.jpg" srcset="img/jury/pavlova@2x.jpg 2x" alt="Фотография члена жирю" width="260" height="300">
+                <img
+                  class="persons__img"
+                  src="img/jury/pavlova.jpg"
+                  srcset="img/jury/pavlova@2x.jpg 2x"
+                  alt="Фотография члена жирю"
+                  width="260"
+                  height="300"
+                />
                 <span class="persons__name">Анна Павлова</span>
               </div>
               <div class="persons__slide swiper-slide">
-                <img class="persons__img" src="img/jury/lavrov.jpg" srcset="img/jury/lavrov@2x.jpg 2x" alt="Фотография члена жирю" width="260" height="300">
+                <img
+                  class="persons__img"
+                  src="img/jury/lavrov.jpg"
+                  srcset="img/jury/lavrov@2x.jpg 2x"
+                  alt="Фотография члена жирю"
+                  width="260"
+                  height="300"
+                />
                 <span class="persons__name">Алексей Лавров</span>
               </div>
               <div class="persons__slide swiper-slide">
-                <img class="persons__img" src="img/jury/pashkov.jpg" srcset="img/jury/pashkov@2x.jpg 2x" alt="Фотография члена жирю" width="260" height="300">
+                <img
+                  class="persons__img"
+                  src="img/jury/pashkov.jpg"
+                  srcset="img/jury/pashkov@2x.jpg 2x"
+                  alt="Фотография члена жирю"
+                  width="260"
+                  height="300"
+                />
                 <span class="persons__name">Александр Пашков</span>
               </div>
               <div class="persons__slide swiper-slide">
-                <img class="persons__img" src="img/jury/ketova.jpg" srcset="img/jury/ketova@2x.jpg 2x" alt="Фотография члена жирю" width="260" height="300">
+                <img
+                  class="persons__img"
+                  src="img/jury/ketova.jpg"
+                  srcset="img/jury/ketova@2x.jpg 2x"
+                  alt="Фотография члена жирю"
+                  width="260"
+                  height="300"
+                />
                 <span class="persons__name">Мария Кетова</span>
               </div>
             </div>
           </div>
 
-          <button class="persons__slider-button persons__slider-button--prev" type="button" aria-label="Посмотреть предыдущий слайд">
-          </button>
-          <button class="persons__slider-button persons__slider-button--next" type="button" aria-label="Посмотреть следующий слайд">
-          </button>
+          <button
+            class="persons__slider-button persons__slider-button--prev"
+            type="button"
+            aria-label="Посмотреть предыдущий слайд"
+          ></button>
+          <button
+            class="persons__slider-button persons__slider-button--next"
+            type="button"
+            aria-label="Посмотреть следующий слайд"
+          ></button>
         </div>
-
       </section>
 
       <section class="features features--wrapper" data-test="features">
@@ -184,7 +369,9 @@
             <span>машин</span>
             <div>
               <h3>Собственная парковка</h3>
-              <p>Вы всегда найдёте место для своей машины&nbsp;на нашей парковке</p>
+              <p>
+                Вы всегда найдёте место для своей машины&nbsp;на нашей парковке
+              </p>
             </div>
           </li>
           <li>
@@ -222,7 +409,14 @@
             <p>Безлимитный абонемент в тренажёрный зал</p>
             <a class="offers__link offers__link--main" href="#">Подробнее</a>
           </div>
-          <img class="offers__img" src="img/content-img/girl-img.jpg" srcset="img/content-img/girl-img@2x.jpg 2x" alt="Фотография девушки" width="400" height="462">
+          <img
+            class="offers__img"
+            src="img/content-img/girl-img.jpg"
+            srcset="img/content-img/girl-img@2x.jpg 2x"
+            alt="Фотография девушки"
+            width="400"
+            height="462"
+          />
         </div>
         <div class="offers__add-wrapper">
           <ul class="offers__list">
@@ -245,7 +439,9 @@
         <div class="faq__tabs tabs">
           <ul class="tabs__list">
             <li class="tabs__item tabs__item--active">
-              <button class="tabs__button tabs__button--active" type="button">Центр</button>
+              <button class="tabs__button tabs__button--active" type="button">
+                Центр
+              </button>
             </li>
             <li class="tabs__item">
               <button class="tabs__button" type="button">Абонемент</button>
@@ -258,21 +454,38 @@
             </li>
           </ul>
           <div class="tabs__content">
-            <details>
+            <details open>
               <summary>
                 <span>Как стать членом фитнес-центра?</span>
-                <button class="tabs__mark" type="button" aria-label="Показать ответ">
-                  <svg width="14" height="14" viewBox="0 0 14 14" stroke="#1C3374">
+                <button
+                  class="tabs__mark"
+                  type="button"
+                  aria-label="Показать ответ"
+                >
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    stroke="#1C3374"
+                  >
                     <use href="/__spritemap#sprite-plus"></use>
                   </svg>
                 </button>
               </summary>
-              <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+              <p>
+                При первом посещении и покупке абонемента, необходимо заполнить
+                анкету и подписать договор. При покупке абонемента онлайн,
+                анкета также заполняется онлайн и договор придёт вам на почту.
+              </p>
             </details>
             <details>
               <summary>
                 <span>Где можно посмотреть расписание?</span>
-                <button class="tabs__mark" type="button" aria-label="Показать ответ">
+                <button
+                  class="tabs__mark"
+                  type="button"
+                  aria-label="Показать ответ"
+                >
                   <svg width="14" height="14" viewBox="0 0 14 14">
                     <use href="/__spritemap#sprite-plus"></use>
                   </svg>
@@ -283,7 +496,11 @@
             <details>
               <summary>
                 <span>Есть кулеры в центре? Предоставляются полотенца?</span>
-                <button class="tabs__mark" type="button" aria-label="Показать ответ">
+                <button
+                  class="tabs__mark"
+                  type="button"
+                  aria-label="Показать ответ"
+                >
                   <svg width="14" height="14" viewBox="0 0 14 14">
                     <use href="/__spritemap#sprite-plus"></use>
                   </svg>
@@ -293,8 +510,15 @@
             </details>
             <details>
               <summary>
-                <span>Сколько тренеров работает в клубе и какова их квалификация?</span>
-                <button class="tabs__mark" type="button" aria-label="Показать ответ">
+                <span
+                  >Сколько тренеров работает в клубе и какова
+                  их квалификация?</span
+                >
+                <button
+                  class="tabs__mark"
+                  type="button"
+                  aria-label="Показать ответ"
+                >
                   <svg width="14" height="14" viewBox="0 0 14 14">
                     <use href="/__spritemap#sprite-plus"></use>
                   </svg>
@@ -304,9 +528,7 @@
             </details>
           </div>
         </div>
-        <div>
-
-        </div>
+        <div></div>
       </section>
 
       <section class="reviews reviews--wrapper" data-test="reviews">
@@ -315,39 +537,83 @@
           <div class="swiper swiper--faq">
             <div class="slider slider--wrapper swiper-wrapper">
               <div class="slider__slide swiper-slide">
-                <img src="img/review/review-author.png" srcset="img/review/review-author@2x.png 2x" alt="Аватарка автора отзыва" width="80" height="80" />
+                <img
+                  src="img/review/review-author.png"
+                  srcset="img/review/review-author@2x.png 2x"
+                  alt="Аватарка автора отзыва"
+                  width="80"
+                  height="80"
+                />
                 <h3>Анна Орлова</h3>
-                <blockquote>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
+                <blockquote>
+                  «Хожу в Supergym уже больше года. Нравится, что в клубе всегда
+                  чисто, тренажёры обновляют, персонал дружелюбный.
+                  Зал просторный, даже в вечернее время нет очередей»
+                </blockquote>
               </div>
               <div class="slider__slide swiper-slide">
-                <img src="img/review/review-author.png" srcset="img/review/review-author@2x.png 2x" alt="Аватарка автора отзыва" width="80" height="80" />
+                <img
+                  src="img/review/review-author.png"
+                  srcset="img/review/review-author@2x.png 2x"
+                  alt="Аватарка автора отзыва"
+                  width="80"
+                  height="80"
+                />
                 <h3>Анна Орлова</h3>
-                <blockquote>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
+                <blockquote>
+                  «Хожу в Supergym уже больше года. Нравится, что в клубе всегда
+                  чисто, тренажёры обновляют, персонал дружелюбный.
+                  Зал просторный, даже в вечернее время нет очередей»
+                </blockquote>
               </div>
             </div>
           </div>
 
-          <button class="reviews__button reviews__button--prev" type="button" aria-label="Посмотреть предыдущий слайд">
-          </button>
-          <button class="reviews__button reviews__button--next" type="button" aria-label="Посмотреть следующий слайд">
-          </button>
+          <button
+            class="reviews__button reviews__button--prev"
+            type="button"
+            aria-label="Посмотреть предыдущий слайд"
+          ></button>
+          <button
+            class="reviews__button reviews__button--next"
+            type="button"
+            aria-label="Посмотреть следующий слайд"
+          ></button>
         </div>
-
       </section>
 
       <div class="page-footer page-footer--wrapper" data-test="form">
         <section class="form form--wrapper">
           <h2 class="form__title">Бесплатное занятие</h2>
-          <form class="form__form" action="https://echo.htmlacademy.ru/" method="post">
+          <form
+            class="form__form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
             <div>
               <div class="form__input-wrapper">
-                <label>
-                  <input class="form__input input" type="text" name="name" pattern="^[A-ZА_Я][a-zа-яё\s]+$" title="Напишите своё имя с заглавной буквы" required placeholder="Имя">
+                <label class="form__label">
+                  <input
+                    class="form__input input"
+                    type="text"
+                    name="name"
+                    pattern="^[A-ZА_Я][a-zа-яё\s]+$"
+                    title="Напишите своё имя с заглавной буквы"
+                    required
+                    placeholder="Имя"
+                  />
                 </label>
               </div>
               <div class="form__input-wrapper">
-                <label>
-                  <input class="form__input input" type="number" name="phone" title="Используй только цифры" required placeholder="Телефон">
+                <label class="form__label">
+                  <input
+                    class="form__input input"
+                    type="number"
+                    name="phone"
+                    title="Используй только цифры"
+                    required
+                    placeholder="Телефон"
+                  />
                 </label>
               </div>
             </div>
@@ -360,25 +626,36 @@
           <div class="contacts__list">
             <dl>
               <dt class="contacts__term">Адрес:</dt>
-              <dd class="contacts__description">г. Омск, ул. 60 лет Октября, 7</dd>
+              <dd class="contacts__description">
+                г. Омск, ул. 60 лет Октября, 7
+              </dd>
               <dt class="contacts__term">График работы:</dt>
               <dd class="contacts__description">Пн-Вс: с 8:00 до 22:00</dd>
             </dl>
             <dl>
               <dt class="contacts__term">Телефон:</dt>
-              <dd class="contacts__description"><a href="tel:+88005555555">8 800 555-55-55</a></dd>
+              <dd class="contacts__description">
+                <a href="tel:+88005555555">8 800 555-55-55</a>
+              </dd>
               <dt class="contacts__term">Email:</dt>
-              <dd class="contacts__description"><a href="mailto:oмск@supergym.ru">oмск@supergym.ru</a></dd>
+              <dd class="contacts__description">
+                <a href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+              </dd>
             </dl>
           </div>
         </section>
       </div>
-
     </main>
 
     <footer class="footer footer--wrapper" data-test="footer">
       <div class="logo">
-        <img class="logo__img" src="img/content-img/logo.svg" alt="Логотип" width="100" height="20">
+        <img
+          class="logo__img"
+          src="img/content-img/logo.svg"
+          alt="Логотип"
+          width="100"
+          height="20"
+        />
       </div>
 
       <section class="footer-nav footer-nav--wrapper">
@@ -409,7 +686,12 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link" href="https://vk.com/htmlacademy">
-              <svg width="12.04" height="6.94" viewBox="0 0 12.04 6.94" fill="#030A1A">
+              <svg
+                width="12.04"
+                height="6.94"
+                viewBox="0 0 12.04 6.94"
+                fill="#030A1A"
+              >
                 <use href="/__spritemap#sprite-vk"></use>
               </svg>
               <span class="visually-hidden">Вконтакте</span>
@@ -417,7 +699,12 @@
           </li>
           <li class="social__item">
             <a class="social__link" href="https://htmlacademy.ru/">
-              <svg width="8.83" height="15.73" viewBox="0 0 8.83 15.73" fill="#030A1A">
+              <svg
+                width="8.83"
+                height="15.73"
+                viewBox="0 0 8.83 15.73"
+                fill="#030A1A"
+              >
                 <use href="/__spritemap#sprite-ok"></use>
               </svg>
               <span class="visually-hidden">Одноклассники</span>
@@ -425,7 +712,12 @@
           </li>
           <li class="social__item">
             <a class="social__link" href="https://htmlacademy.ru/">
-              <svg width="13.89" height="13.89" viewBox="0 0 13.89 13.89" fill="#030A1A">
+              <svg
+                width="13.89"
+                height="13.89"
+                viewBox="0 0 13.89 13.89"
+                fill="#030A1A"
+              >
                 <use href="/__spritemap#sprite-reddit"></use>
               </svg>
               <span class="visually-hidden">Реддит</span>

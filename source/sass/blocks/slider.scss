@@ -36,6 +36,9 @@
   width: 68px;
   height: 68px;
 
+  border-radius: 50%;
+  background-color: #57606e;
+
   @media (min-width: $tablet) {
     margin-right: 20px;
     width: 80px;
@@ -84,4 +87,3 @@
     text-align: left;
   }
 }
-
