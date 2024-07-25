@@ -188,6 +188,10 @@
 }
 
 .price__content {
+  display: none;
+}
+
+.price__content--active {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -228,20 +232,13 @@
   }
 }
 
-.price__item:hover,
-.price__item:focus-within {
+.price__item:hover {
   border: 7px solid;
   border-image-slice: 7;
   border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
 }
 
 .price__item:hover .link--secondary {
-  color: $base-white;
-  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-  border: 2px solid $base-white;
-}
-
-.price__item:focus-within .link--secondary {
   color: $base-white;
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   border: 2px solid $base-white;
@@ -326,6 +323,30 @@
 
 .price__price-wrapper--third::before {
   content: "2700" / "";
+}
+
+.price__price-wrapper--forth::before {
+  content: "30 000" / "";
+}
+
+.price__price-wrapper--fifth::before {
+  content: "10 200" / "";
+}
+
+.price__price-wrapper--sixth::before {
+  content: "16 000" / "";
+}
+
+.price__price-wrapper--seventh::before {
+  content: "60 200" / "";
+}
+
+.price__price-wrapper--eigth::before {
+  content: "20 400" / "";
+}
+
+.price__price-wrapper--ninth::before {
+  content: "32 400" / "";
 }
 
 .price__price-wrapper div {

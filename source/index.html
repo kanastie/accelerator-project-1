@@ -141,77 +141,220 @@
       <section class="price price--wrapper" data-test="price" id="price">
         <h2 class="price__title">Абонементы</h2>
         <div class="price__tabs">
-          <button class="price__tab price__tab--active" type="button">
+          <button
+            class="price__tab price__tab--active"
+            data-tab="1"
+            type="button"
+          >
             1 месяц
           </button>
-          <button class="price__tab" type="button">6 месяцев</button>
-          <button class="price__tab" type="button">12 месяцев</button>
+          <button class="price__tab" data-tab="2" type="button">
+            6 месяцев
+          </button>
+          <button class="price__tab" data-tab="3" type="button">
+            12 месяцев
+          </button>
         </div>
-        <ul class="price__content">
-          <li class="price__item">
-            <h3 class="price__headling">С тренером</h3>
-            <p class="price__description">12 занятий</p>
-            <div class="price__price-wrapper price__price-wrapper--first">
-              <span>5000</span>
-              <div>
-                <svg
-                  width="14"
-                  height="20"
-                  viewBox="0 0 14 20"
-                  role="img"
-                  focusable="false"
-                  aria-labelledby="rubl"
-                >
-                  <title id="rubl">Рублей</title>
-                  <use href="/__spritemap#sprite-rubl"></use>
-                </svg>
+        <div class="price__content-wrapper">
+          <ul
+            class="price__content price__content--active"
+            id="1"
+          >
+            <li class="price__item">
+              <h3 class="price__headling">С тренером</h3>
+              <p class="price__description">12 занятий</p>
+              <div class="price__price-wrapper price__price-wrapper--first">
+                <span>5000</span>
+                <div>
+                  <svg
+                    width="14"
+                    height="20"
+                    viewBox="0 0 14 20"
+                    role="img"
+                    focusable="false"
+                    aria-labelledby="rubl"
+                  >
+                    <title id="rubl">Рублей</title>
+                    <use href="/__spritemap#sprite-rubl"></use>
+                  </svg>
+                </div>
               </div>
-            </div>
-            <a class="link link--secondary" href="#">Купить абонемент</a>
-          </li>
-          <li class="price__item">
-            <h3 class="price__headling">Дневной</h3>
-            <p class="price__description">с 8:00 до 17:00</p>
-            <div class="price__price-wrapper price__price-wrapper--second">
-              <span>1700</span>
-              <div>
-                <svg
-                  width="14"
-                  height="20"
-                  viewBox="0 0 14 20"
-                  role="img"
-                  focusable="false"
-                  aria-labelledby="rubl"
-                >
-                  <title id="rubl">Рублей</title>
-                  <use href="/__spritemap#sprite-rubl"></use>
-                </svg>
+              <a class="link link--secondary" href="#">Купить абонемент</a>
+            </li>
+            <li class="price__item">
+              <h3 class="price__headling">Дневной</h3>
+              <p class="price__description">с 8:00 до 17:00</p>
+              <div class="price__price-wrapper price__price-wrapper--second">
+                <span>1700</span>
+                <div>
+                  <svg
+                    width="14"
+                    height="20"
+                    viewBox="0 0 14 20"
+                    role="img"
+                    focusable="false"
+                    aria-labelledby="rubl"
+                  >
+                    <title id="rubl">Рублей</title>
+                    <use href="/__spritemap#sprite-rubl"></use>
+                  </svg>
+                </div>
               </div>
-            </div>
-            <a class="link link--secondary" href="#">Купить абонемент</a>
-          </li>
-          <li class="price__item">
-            <h3 class="price__headling">Полный день</h3>
-            <p class="price__description">с 8:00 до 22:00</p>
-            <div class="price__price-wrapper price__price-wrapper--third">
-              <span>2700</span>
-              <div>
-                <svg
-                  width="14"
-                  height="20"
-                  viewBox="0 0 14 20"
-                  role="img"
-                  focusable="false"
-                  aria-labelledby="rubl"
-                >
-                  <title id="rubl">Рублей</title>
-                  <use href="/__spritemap#sprite-rubl"></use>
-                </svg>
+              <a class="link link--secondary" href="#">Купить абонемент</a>
+            </li>
+            <li class="price__item">
+              <h3 class="price__headling">Полный день</h3>
+              <p class="price__description">с 8:00 до 22:00</p>
+              <div class="price__price-wrapper price__price-wrapper--third">
+                <span>2700</span>
+                <div>
+                  <svg
+                    width="14"
+                    height="20"
+                    viewBox="0 0 14 20"
+                    role="img"
+                    focusable="false"
+                    aria-labelledby="rubl"
+                  >
+                    <title id="rubl">Рублей</title>
+                    <use href="/__spritemap#sprite-rubl"></use>
+                  </svg>
+                </div>
               </div>
-            </div>
-            <a class="link link--secondary" href="#">Купить абонемент</a>
-          </li>
-        </ul>
+              <a class="link link--secondary" href="#">Купить абонемент</a>
+            </li>
+          </ul>
+          <ul class="price__content price__content" id="2">
+            <li class="price__item">
+              <h3 class="price__headling">С тренером</h3>
+              <p class="price__description">12 занятий</p>
+              <div class="price__price-wrapper price__price-wrapper--forth">
+                <span>30 000</span>
+                <div>
+                  <svg
+                    width="14"
+                    height="20"
+                    viewBox="0 0 14 20"
+                    role="img"
+                    focusable="false"
+                    aria-labelledby="rubl"
+                  >
+                    <title id="rubl">Рублей</title>
+                    <use href="/__spritemap#sprite-rubl"></use>
+                  </svg>
+                </div>
+              </div>
+              <a class="link link--secondary" href="#">Купить абонемент</a>
+            </li>
+            <li class="price__item">
+              <h3 class="price__headling">Дневной</h3>
+              <p class="price__description">с 8:00 до 17:00</p>
+              <div class="price__price-wrapper price__price-wrapper--fifth">
+                <span>10 200</span>
+                <div>
+                  <svg
+                    width="14"
+                    height="20"
+                    viewBox="0 0 14 20"
+                    role="img"
+                    focusable="false"
+                    aria-labelledby="rubl"
+                  >
+                    <title id="rubl">Рублей</title>
+                    <use href="/__spritemap#sprite-rubl"></use>
+                  </svg>
+                </div>
+              </div>
+              <a class="link link--secondary" href="#">Купить абонемент</a>
+            </li>
+            <li class="price__item">
+              <h3 class="price__headling">Полный день</h3>
+              <p class="price__description">с 8:00 до 22:00</p>
+              <div class="price__price-wrapper price__price-wrapper--sixth">
+                <span>16 200</span>
+                <div>
+                  <svg
+                    width="14"
+                    height="20"
+                    viewBox="0 0 14 20"
+                    role="img"
+                    focusable="false"
+                    aria-labelledby="rubl"
+                  >
+                    <title id="rubl">Рублей</title>
+                    <use href="/__spritemap#sprite-rubl"></use>
+                  </svg>
+                </div>
+              </div>
+              <a class="link link--secondary" href="#">Купить абонемент</a>
+            </li>
+          </ul>
+          <ul class="price__content price__content" id="3">
+            <li class="price__item">
+              <h3 class="price__headling">С тренером</h3>
+              <p class="price__description">12 занятий</p>
+              <div class="price__price-wrapper price__price-wrapper--seventh">
+                <span>60 000</span>
+                <div>
+                  <svg
+                    width="14"
+                    height="20"
+                    viewBox="0 0 14 20"
+                    role="img"
+                    focusable="false"
+                    aria-labelledby="rubl"
+                  >
+                    <title id="rubl">Рублей</title>
+                    <use href="/__spritemap#sprite-rubl"></use>
+                  </svg>
+                </div>
+              </div>
+              <a class="link link--secondary" href="#">Купить абонемент</a>
+            </li>
+            <li class="price__item">
+              <h3 class="price__headling">Дневной</h3>
+              <p class="price__description">с 8:00 до 17:00</p>
+              <div class="price__price-wrapper price__price-wrapper--eigth">
+                <span>20 400</span>
+                <div>
+                  <svg
+                    width="14"
+                    height="20"
+                    viewBox="0 0 14 20"
+                    role="img"
+                    focusable="false"
+                    aria-labelledby="rubl"
+                  >
+                    <title id="rubl">Рублей</title>
+                    <use href="/__spritemap#sprite-rubl"></use>
+                  </svg>
+                </div>
+              </div>
+              <a class="link link--secondary" href="#">Купить абонемент</a>
+            </li>
+            <li class="price__item">
+              <h3 class="price__headling">Полный день</h3>
+              <p class="price__description">с 8:00 до 22:00</p>
+              <div class="price__price-wrapper price__price-wrapper--ninth">
+                <span>32 400</span>
+                <div>
+                  <svg
+                    width="14"
+                    height="20"
+                    viewBox="0 0 14 20"
+                    role="img"
+                    focusable="false"
+                    aria-labelledby="rubl"
+                  >
+                    <title id="rubl">Рублей</title>
+                    <use href="/__spritemap#sprite-rubl"></use>
+                  </svg>
+                </div>
+              </div>
+              <a class="link link--secondary" href="#">Купить абонемент</a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="announce announce--wrapper" data-test="games">

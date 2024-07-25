@@ -1,3 +1,4 @@
 import "./swiper-jury";
 import "./swiper-faq";
-import "./tabs";
+import "./faq";
+import "./price";
