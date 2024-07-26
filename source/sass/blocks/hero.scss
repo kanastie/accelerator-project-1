@@ -150,9 +150,12 @@
 }
 
 .hero__img {
-  display: block;
   height: 390px;
   background-color: #000b2f;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
 }
 
 .hero__img img {
