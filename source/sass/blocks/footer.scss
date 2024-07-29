@@ -2,18 +2,18 @@
   padding: 40px 15px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 28px;
 
   background-color: $bg-footer;
 
   @media (min-width: $tablet) {
-    padding: 45px 45px 48px;
+    padding: 46px 45px 44px;
     flex-direction: row;
-    gap: 35px;
+    gap: 37px;
   }
 
   @media (min-width: $desktop) {
-    padding: 40px 103px;
-    gap: 167.5px;
+    padding: 38px 103px 40px;
+    gap: 169px;
   }
 }
