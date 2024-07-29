@@ -1,9 +1,9 @@
 .contacts--wrapper {
-  padding: 40px 15px;
+  padding: 38px 15px 40px;
   background-color: $base-white;
 
   @media (min-width: $tablet) {
-    padding: 60px 164px;
+    padding: 60px 164px 59px;
   }
 
   @media (min-width: $desktop) {
@@ -14,7 +14,7 @@
 
 .contacts__title {
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 37px;
 
   font-family: $alumni;
   font-size: 32px;
@@ -46,11 +46,11 @@
     position: relative;
 
     flex-direction: row;
-    gap: 60px;
+    gap: 0;
   }
 
   @media (min-width: $desktop) {
-    gap: 120px;
+    gap: 60px;
   }
 }
 
@@ -75,6 +75,10 @@
     transform: rotate(-90deg);
     position: absolute;
     top: 57px;
+    left: 37%;
+  }
+
+  @media (min-width: $desktop) {
     left: 38%;
   }
 }

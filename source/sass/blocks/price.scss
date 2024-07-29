@@ -4,13 +4,13 @@
   background-color: $bg-add-white;
 
   @media (min-width: $tablet) {
-    padding: 60px 194px;
+    padding: 60px 194px 56px;
     position: relative;
     overflow: hidden;
   }
 
   @media (min-width: $desktop) {
-    padding: 100px 103px;
+    padding: 94px 103px 97px;
   }
 }
 
@@ -21,8 +21,8 @@
     width: 275px;
     height: 328px;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 13px;
+    right: -14px;
     transform: rotate(150deg);
     background-image: url("../../img/content-img/plates.png");
     background-size: contain;
@@ -40,12 +40,13 @@
     height: 384px;
     transform: rotate(150deg);
     right: -7%;
+    bottom: 4px;
   }
 }
 
 .price__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 
   font-family: $alumni;
   font-size: 32px;
@@ -70,12 +71,11 @@
 }
 
 .price__tabs {
+  position: relative;
   margin-bottom: 30px;
 
   display: flex;
   justify-content: space-between;
-
-  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 
   @media (min-width: $tablet) {
     margin: 0 auto 45px;
@@ -84,8 +84,18 @@
 
   @media (min-width: $desktop) {
     margin: 0 auto 40px;
-    width: 310px;
+    width: 350px;
   }
+}
+
+.price__tabs::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 1px;
+  background-color: rgba(120, 120, 120, 0.2);
 }
 
 .price__tab {
@@ -127,7 +137,7 @@
   width: 100%;
   height: 2px;
   position: absolute;
-  bottom: -2px;
+  bottom: 1px;
   background-color: $border-tab-color;
 }
 
@@ -142,7 +152,7 @@
   width: 100%;
   height: 2px;
   position: absolute;
-  bottom: -2px;
+  bottom: 1px;
   background-color: #787878;
 }
 
@@ -158,7 +168,7 @@
   width: 100%;
   height: 2px;
   position: absolute;
-  bottom: -2px;
+  bottom: 1px;
   background-color: $base-blue;
 }
 
@@ -173,7 +183,7 @@
   width: 100%;
   height: 2px;
   position: absolute;
-  bottom: -2px;
+  bottom: 1px;
   background-color: $border-tab-color;
 }
 
@@ -198,12 +208,12 @@
 
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 37px;
 
   @media (min-width: $tablet) {
     position: relative;
     z-index: 1;
-    gap: 40px;
+    gap: 35px;
   }
 
   @media (min-width: $desktop) {
@@ -212,7 +222,7 @@
 }
 
 .price__item {
-  padding: 50px 42px;
+  padding: 43px 36px;
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -222,7 +232,7 @@
   background-color: $base-white;
 
   @media (min-width: $tablet) {
-    padding: 65px;
+    padding: 59px 61px 65px;
     gap: 22px;
   }
 
@@ -241,7 +251,7 @@
 .price__item:hover .link--secondary {
   color: $base-white;
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-  border: 2px solid $base-white;
+  box-shadow: 0 0 0 2px $base-white;
 }
 
 .price__headling {
@@ -295,7 +305,7 @@
 
 .price__price-wrapper::before {
   position: absolute;
-  bottom: 13px;
+  bottom: 0px;
 
   font-family: $roboto;
   font-size: 80px;
@@ -366,8 +376,8 @@
 .price__content span {
   z-index: 1;
 
-  padding-top: 48px;
-  margin-top: -8px;
+  padding-top: 56px;
+  margin-top: -9px;
 
   font-family: $roboto;
   font-size: 48px;
@@ -377,7 +387,7 @@
   text-align: center;
 
   @media (min-width: $tablet) {
-    padding-top: 60px;
+    padding-top: 71px;
 
     font-size: 60px;
     line-height: 90px;

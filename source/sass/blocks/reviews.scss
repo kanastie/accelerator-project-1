@@ -4,7 +4,7 @@
   background-color: $base-white;
 
   @media (min-width: $tablet) {
-    padding: 60px 45px;
+    padding: 58px 45px 59px;
   }
 
   @media (min-width: $desktop) {
@@ -83,7 +83,7 @@
   position: absolute;
 
   background-image: url("data:image/svg+xml,%3Csvg width='12' height='22' viewBox='0 0 12 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L11 11L1 21' stroke='%23ffffff'/%3E%3C/svg%3E%0A");
-  background-size: 16px 32px;
+  background-size: 20px 34px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -100,38 +100,38 @@
   position: absolute;
 
   background-image: url("data:image/svg+xml,%3Csvg width='12' height='22' viewBox='0 0 12 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L11 11L1 21' stroke='%23ffffff'/%3E%3C/svg%3E%0A");
-  background-size: 16px 32px;
+  background-size: 20px 34px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .reviews__button--prev {
   top: 50%;
-  left: 0;
+  left: -19px;
   transform: translateY(-50%) rotate(180deg);
 
   background-image: url("../../img/sprite/arrow.svg");
-  background-size: 16px 32px;
+  background-size: 20px 34px;
   background-repeat: no-repeat;
   background-position: center;
 
   @media (min-width: $desktop) {
-    left: 175px;
+    left: 178px;
   }
 }
 
 .reviews__button--next {
   top: 50%;
-  right: 0;
+  right: -18px;
   transform: translateY(-50%);
 
   background-image: url("../../img/sprite/arrow.svg");
-  background-size: 16px 32px;
+  background-size: 20px 34px;
   background-repeat: no-repeat;
   background-position: center;
 
   @media (min-width: $desktop) {
-    right: 175px;
+    right: 178px;
   }
 }
 

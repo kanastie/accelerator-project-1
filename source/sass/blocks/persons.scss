@@ -5,11 +5,11 @@
   background-color: $base-white;
 
   @media (min-width: $tablet) {
-    padding: 40px 45px 60px;
+    padding: 30px 45px 60px;
   }
 
   @media (min-width: $desktop) {
-    padding: 100px 103px;
+    padding: 99px 103px;
   }
 }
 
@@ -170,7 +170,7 @@
 }
 
 .persons__slider-button--prev {
-  top: 50%;
+  top: 49%;
   left: -10px;
   transform: translateY(-50%) rotate(180deg);
 
@@ -189,7 +189,7 @@
 }
 
 .persons__slider-button--next {
-  top: 50%;
+  top: 49%;
   right: -10px;
   transform: translateY(-50%);
 

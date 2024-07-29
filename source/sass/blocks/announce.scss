@@ -1,21 +1,21 @@
 .announce--wrapper {
-  padding: 25px 15px;
+  padding: 26px 15px;
 
   background-color: $base-white;
 
   @media (min-width: $tablet) {
-    padding: 60px 45px;
+    padding: 59px 45px;
     display: flex;
     justify-content: center;
   }
 
   @media (min-width: $desktop) {
-    padding: 100px 103px;
+    padding: 101px 103px;
   }
 }
 
 .announce__inner {
-  padding: 40px;
+  padding: 41px 40px;
 
   display: flex;
   flex-direction: column;
@@ -24,7 +24,8 @@
   background-color: $bg-banner;
 
   @media (min-width: $tablet) {
-    gap: 8px;
+    padding: 40px 40px;
+    gap: 11px;
   }
 
   @media (min-width: $desktop) {
@@ -39,11 +40,11 @@
   gap: 37px;
 
   @media (min-width: $tablet) {
-    gap: 20px;
+    gap: 22px;
   }
 
   @media (min-width: $desktop) {
-    gap: 83px;
+    gap: 77px;
   }
 }
 
@@ -75,23 +76,30 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 9px;
   }
 
   @media (min-width: $desktop) {
-    gap: 30px;
+    margin-right: 4px;
+    margin-top: 2px;
+    gap: 21px;
   }
 }
 
 .announce__item {
   position: relative;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 6px;
 
   @media (min-width: $tablet) {
     margin-bottom: 0;
+    gap: 4px;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 10px;
   }
 }
 
@@ -136,6 +144,10 @@
   line-height: 24px;
   font-weight: 700;
   color: $base-white;
+
+  @media (min-width: $tablet) {
+    gap: 7px;
+  }
 
   @media (min-width: $desktop) {
     font-size: 40px;
@@ -183,7 +195,7 @@
 
   @media (min-width: $tablet) {
     width: 378px;
-    height: 340px;
+    height: 348px;
   }
 
   @media (min-width: $desktop) {
