@@ -17,6 +17,7 @@ playButton.addEventListener('click', () => {
   frame.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
   frame.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
   frame.setAttribute('allowfullscreen', '');
+  frame.style.backgroundColor = '#2d2f6e';
 
   videoElement.appendChild(frame);
 });

@@ -1,12 +1,14 @@
-const tabContainer = document.querySelector('.tabs__content');
+const tabContainer = document.querySelectorAll('.tabs__content');
 
-tabContainer.addEventListener('click', (evt) => {
+tabContainer.forEach((button) => {
+  button.addEventListener('click', (evt) => {
 
-  const item = evt.target.closest('details');
+    const item = evt.target.closest('details');
 
-  if (item.hasAttribute('open')) {
-    item.removeAttribute('open');
-  } else {
-    item.setAttribute('open', '');
-  }
+    if (item.hasAttribute('open')) {
+      item.removeAttribute('open');
+    } else {
+      item.setAttribute('open', '');
+    }
+  });
 });

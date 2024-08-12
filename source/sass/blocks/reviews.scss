@@ -137,4 +137,5 @@
 
 .reviews__button:disabled {
   opacity: 30%;
+  pointer-events: none;
 }
