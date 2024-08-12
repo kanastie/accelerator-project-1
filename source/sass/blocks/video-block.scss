@@ -88,6 +88,11 @@
   opacity: 60%;
   border-radius: 50%;
   background-color: transparent;
+
+  @media (min-width: $desktop) {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .video-block__play:focus-visible {
@@ -105,6 +110,11 @@
   border: 2px solid $base-blue;
   border-radius: 50%;
   background-color: transparent;
+
+  @media (min-width: $desktop) {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .video-block__play:focus-visible svg {
@@ -126,6 +136,11 @@
   border: 2px solid $base-blue;
   border-radius: 50%;
   background-color: transparent;
+
+  @media (min-width: $desktop) {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .video-block__play:active svg {

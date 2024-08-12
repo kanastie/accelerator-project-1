@@ -56,6 +56,10 @@
     color: $base-white;
 
     background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+
+    border: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
   }
 }
 
@@ -72,7 +76,7 @@
   color: $base-white;
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 
-  border: transparent;
+  border: 1px solid #f8f9fc;
 }
 
 .tabs__button:disabled {
@@ -80,8 +84,14 @@
 }
 
 .tabs__content {
+  display: none;
+
   @media (min-width: $desktop) {
     width: 860px;
+  }
+
+  &--active {
+    display: block;
   }
 }
 
@@ -117,6 +127,9 @@
 
 .tabs__content summary span:first-of-type {
   width: 238px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
 
   @media (min-width: $tablet) {
     width: 500px;
@@ -200,26 +213,19 @@ summary:disabled .tabs__mark {
 }
 
 .tabs__content details {
-  padding: 21px 0;
+  padding: 20px 0;
   position: relative;
 
-  @media (min-width: $tablet) {
-    padding: 23px 0;
-  }
-}
+  border-top: 1px solid #74819c;
 
-.tabs__content details::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  position: absolute;
-  top: 0;
-  background-color: #74819c;
+  @media (min-width: $tablet) {
+    padding: 22px 0;
+  }
 }
 
 .tabs__content details:last-child {
   padding: 20px 0;
+  border-bottom: 1px solid #74819c;
 
   @media (min-width: $tablet) {
     padding: 25px 0;
@@ -228,16 +234,6 @@ summary:disabled .tabs__mark {
   @media (min-width: $desktop) {
     padding: 23px 0;
   }
-}
-
-.tabs__content details:last-child::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  position: absolute;
-  bottom: 0;
-  background-color: #74819c;
 }
 
 .tabs__content p {

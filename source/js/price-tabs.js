@@ -6,8 +6,8 @@ tabButtons.forEach((button) => {
   button.addEventListener('click', () => {
 
     let currentButton = button;
-    let tabId = currentButton.getAttribute('data-tab');
-    let currentTab = document.getElementById(tabId);
+    let tabId = currentButton.getAttribute('data-price-tab');
+    let currentTab = document.getElementById(`price-${tabId}`);
 
     tabButtons.forEach((item) => {
       item.classList.remove('price__tab--active');

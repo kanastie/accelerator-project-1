@@ -12,6 +12,7 @@
     grid-template-columns: 560px auto;
     grid-template-rows: auto auto;
     column-gap: 40px;
+    justify-content: center;
   }
 }
 
@@ -189,32 +190,44 @@
   outline: none;
 }
 
-.offers__link:focus::after {
+.offers__link:focus-visible::after {
   content: "";
   width: 93px;
   height: 34px;
   border: 1px solid $border-add-color;
   background-color: transparent;
   position: absolute;
-  top: -63%;
+  top: -72%;
   left: -15%;
+
+  @media (min-width: $tablet) {
+    top: 21%;
+  }
+
+  @media (min-width: $desktop) {
+    top: -71%;
+  }
 }
 
 .offers__link:disabled {
   opacity: 30%;
 }
 
-.offers__link--main:focus {
+.offers__link--main:focus-visible {
   position: relative;
   outline: none;
 }
 
-.offers__link--main:focus::after {
+.offers__link--main:focus-visible::after {
   border: 1px solid $base-white;
-  top: -21%;
+  top: -30%;
 
   @media (min-width: $tablet) {
     top: -21%;
+  }
+
+  @media (min-width: $desktop) {
+    top: -30%;
   }
 }
 
