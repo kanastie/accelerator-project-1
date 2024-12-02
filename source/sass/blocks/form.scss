@@ -1,35 +1,20 @@
 .form--wrapper {
-  padding: 70px 15px 69px;
-
   background-color: $base-blue;
+}
+
+.form__container {
+  padding: 71px 15px 70px;
+  margin: 0 auto;
+  width: 290px;
 
   @media (min-width: $tablet) {
-    padding: 60px 164px;
+    padding: 60px 164px 59px;
+    width: 440px;
   }
 
   @media (min-width: $desktop) {
     padding: 60px 103px;
-  }
-}
-
-.form__form {
-  display: flex;
-  flex-direction: column;
-  gap: 36px;
-
-  @media (min-width: $desktop) {
     width: 477px;
-  }
-}
-
-.form__form div {
-  display: flex;
-  flex-direction: column;
-  gap: 35px;
-
-  @media (min-width: $tablet) {
-    flex-direction: row;
-    gap: 25px;
   }
 }
 
@@ -44,29 +29,62 @@
   color: $base-white;
 
   @media (min-width: $tablet) {
+    margin-bottom: 37px;
     font-size: 54px;
     line-height: 54px;
     text-align: center;
   }
 
   @media (min-width: $desktop) {
+    margin-bottom: 36px;
     text-align: left;
+  }
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+  @media (min-width: $tablet) {
+    gap: 35px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 477px;
+    gap: 36px;
+  }
+}
+
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 37px;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    gap: 30px;
   }
 }
 
 .form__input-wrapper {
   position: relative;
   width: 100%;
+
+  @media (min-width: $tablet) {
+    width: calc((440px - 30px) / 2);
+  }
+
+  @media (min-width: $desktop) {
+    width: calc((477px - 30px) / 2);
+  }
 }
 
-.form__label {
-  width: 100%;
-}
-
-.form__input {
+.form input {
   position: relative;
   z-index: 1;
-  padding-bottom: 4px;
+  padding: 0 0 4px;
   width: 100%;
 
   font-family: $roboto;
@@ -76,27 +94,49 @@
   color: $base-white;
 
   border: none;
-  border-bottom: 1px solid #74819c;
   background-color: transparent;
+  box-sizing: border-box;
 }
 
-.form__input::placeholder {
+.form__input-wrapper::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #74819c;
+  position: absolute;
+  bottom: 0;
+}
+
+.form input::placeholder {
   color: #74819c;
 }
 
-.form__input[type="number"]::-webkit-outer-spin-button,
-.form__input[type="number"]::-webkit-inner-spin-button {
-  appearance: none;
-}
-
-.form__input:hover {
-  border-bottom: 1px solid $base-white;
+.form input:hover {
   color: $base-white;
 }
 
-.form__input:focus-visible {
+.form__input-wrapper:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: $base-white;
+  position: absolute;
+  bottom: 0;
+}
+
+.form input:focus {
   outline: none;
-  border-bottom: 1px solid transparent;
+  background-color: transparent;
+}
+
+.form input:focus-visible {
+  outline: none;
+}
+
+.form__input-wrapper:focus-within {
+  background-color: transparent;
 }
 
 .form__input-wrapper:focus-within::after {
@@ -105,8 +145,9 @@
   height: 36px;
   width: 100%;
   position: absolute;
-  top: -22%;
+  top: -33%;
   border: 1px solid $base-white;
+  background-color: transparent;
 
   @media (min-width: $tablet) {
     min-width: 205px;
@@ -117,12 +158,12 @@
   }
 }
 
-.form__input:disabled {
+.form input:disabled {
   opacity: 40%;
 }
 
 .form__button {
-  padding: 22px;
+  padding: 23px 22px 22px;
 
   font-family: $roboto;
   font-size: 12px;
@@ -138,39 +179,105 @@
   cursor: pointer;
 
   @media (min-width: $tablet) {
-    padding: 25px;
+    padding: 27px 25px 24px;
   }
 
   @media (min-width: $desktop) {
+    padding: 27px 25px 24px;
     width: 477px;
   }
 }
 
 .form__button:hover {
-  color: $base-white;
-  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-  border: 2px solid;
-  border-image-slice: 4;
-  border-image-source: linear-gradient(97.05deg, #d10a42 17.6%, #00359f 95.31%);
+  color: $accent-blue;
+  background-color: $base-white;
 }
 
 .form__button:focus-visible {
-  color: $base-white;
-  border: 2px solid $base-blue;
-  background: linear-gradient(
-    97.05deg,
-    rgba(237, 2, 51, 0.8) 17.6%,
-    rgba(0, 62, 183, 0.8) 95.31%
-  );
+  color: $accent-blue;
+  border: 2px solid #000000;
+  background-color: rgba(255, 255, 255, 0.8);
   outline: none;
 }
 
 .form__button:active {
-  color: rgba(255, 255, 255, 0.7);
-  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  color: $base-blue;
+  background-color: $base-white;
   border: 2px solid $base-blue;
 }
 
 .form__button:disabled {
-  opacity: 30%;
+  opacity: 50%;
+  pointer-events: none;
+}
+
+.form__error {
+  display: none;
+  position: absolute;
+  bottom: -100%;
+
+  font-family: $roboto;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: $error;
+  text-align: center;
+}
+
+.form__error::before {
+  content: "";
+  display: block;
+  bottom: 0;
+  background-color: $error;
+  width: 208px;
+  height: 1px;
+  z-index: 1;
+  position: absolute;
+  top: -5px;
+}
+
+.form__modal {
+  padding: 25px;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+
+  @media (min-width: $tablet) {
+    padding: 30px;
+    width: 250px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 35px;
+    width: 270px;
+  }
+}
+
+.form__modal p {
+  padding: 15px 20px;
+  margin: 0;
+  background-color: $base-white;
+
+  font-family: $roboto;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  color: $base-blue;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    padding: 25px 30px;
+
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 30px;
+  }
 }

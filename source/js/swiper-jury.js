@@ -1,14 +1,14 @@
-import Swiper from "swiper";
-import { Navigation } from "swiper/modules";
+import Swiper from 'swiper';
+import { Navigation } from 'swiper/modules';
 
-export const swiperJury = new Swiper(".swiper--jury", {
+export const swiperJury = new Swiper('.swiper--jury', {
   modules: [Navigation],
 
   loop: true,
 
   navigation: {
-    nextEl: ".persons__slider-button--next",
-    prevEl: ".persons__slider-button--prev",
+    nextEl: '.persons__slider-button--next',
+    prevEl: '.persons__slider-button--prev',
   },
 
   breakpoints: {

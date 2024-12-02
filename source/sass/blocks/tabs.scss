@@ -10,7 +10,7 @@
   gap: 10px;
 
   @media (min-width: $tablet) {
-    margin-bottom: 48px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desktop) {
@@ -33,7 +33,7 @@
 }
 
 .tabs__button {
-  padding: 17px 22px;
+  padding: 15px 23px;
   width: 100%;
 
   font-family: $roboto;
@@ -43,13 +43,19 @@
   color: $base-blue;
   text-align: center;
 
-  border: 1px solid rgba(16, 38, 84, 0.2);
+  border: none;
+  box-shadow: inset 0 0 0 1px rgba(16, 38, 84, 0.2);
   background-color: transparent;
   cursor: pointer;
 
   @media (min-width: $tablet) {
+    padding: 18px 23px;
     font-size: 18px;
     line-height: 18px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 20px 23px 16px;
   }
 
   &--active {
@@ -57,26 +63,35 @@
 
     background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 
-    border: 1px solid;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    border: none;
+    box-shadow: none;
   }
 }
 
 .tabs__button:hover {
-  border: 1px solid $base-blue;
+  border: none;
+  box-shadow: inset 0 0 0 1px $base-blue;
+}
+
+.tabs__button--active:hover {
+  border: none;
+  box-shadow: none;
 }
 
 .tabs__button:focus-visible {
-  border: 1px solid $base-blue;
+  box-shadow: inset 0 0 0 1px $base-blue;
+  outline: none;
+}
+
+.tabs__button--active:focus-visible {
+  box-shadow: none;
   outline: none;
 }
 
 .tabs__button:active {
   color: $base-white;
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-
-  border: 1px solid #f8f9fc;
+  box-shadow: none;
 }
 
 .tabs__button:disabled {
@@ -84,7 +99,10 @@
 }
 
 .tabs__content {
+  padding: 0;
+  margin: 0;
   display: none;
+  list-style: none;
 
   @media (min-width: $desktop) {
     width: 860px;
@@ -95,12 +113,7 @@
   }
 }
 
-.tabs__content details summary::marker {
-  display: none;
-  content: "";
-}
-
-.tabs__content summary {
+.tabs__content div {
   position: relative;
   margin: 0;
 
@@ -125,7 +138,7 @@
   }
 }
 
-.tabs__content summary span:first-of-type {
+.tabs__content div span:first-of-type {
   width: 238px;
   min-height: 40px;
   display: flex;
@@ -140,7 +153,7 @@
   }
 }
 
-.tabs__mark {
+.tabs__content button {
   width: 30px;
   height: 30px;
   display: flex;
@@ -149,7 +162,7 @@
   justify-content: center;
 
   background-color: transparent;
-  border: 1px solid $border-add-color;
+  border: 1px solid $add-blue;
   border-radius: 50%;
   cursor: pointer;
 
@@ -159,24 +172,7 @@
   }
 }
 
-.tabs__content details[open] summary .tabs__mark {
-  background-color: $border-add-color;
-  background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 1H10H0' stroke='%23ffffff'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center;
-
-  @media (min-width: $tablet) {
-    background-image: url("data:image/svg+xml,%3Csvg width='20' height='2' viewBox='0 0 20 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 1H10H0' stroke='%23ffffff'/%3E%3C/svg%3E");
-  }
-}
-
-.tabs__content details[open] summary .tabs__mark svg,
-.tabs__content summary:hover .tabs__mark svg,
-.tabs__content summary:focus-within .tabs__mark svg {
-  display: none;
-}
-
-.tabs__mark svg {
+.tabs__content button svg {
   width: 14px;
   height: 14px;
 
@@ -186,49 +182,52 @@
   }
 }
 
-summary:hover .tabs__mark {
-  background-color: $border-add-color;
-  background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 0V7M7 14V7M7 7H14M7 7H0' stroke='%23ffffff'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center;
-
-  @media (min-width: $tablet) {
-    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 0V10M10 20V10M10 10H20M10 10H0' stroke='%23ffffff'/%3E%3C/svg%3E");
-  }
+.tabs__content .data-open button {
+  background-color: $add-blue;
 }
 
-summary:focus-within .tabs__mark {
+.tabs__content div:hover button {
+  background-color: $add-blue;
+}
+
+.tabs__content div:hover svg {
+  stroke: #ffffff;
+}
+
+.tabs__content button:focus-visible {
+  outline: none;
   background-color: #74819c;
-  background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 0V7M7 14V7M7 7H14M7 7H0' stroke='%23ffffff'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center;
-
-  @media (min-width: $tablet) {
-    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 0V10M10 20V10M10 10H20M10 10H0' stroke='%23ffffff'/%3E%3C/svg%3E");
-  }
 }
 
-summary:disabled .tabs__mark {
+.tabs__content button:focus-visible svg {
+  stroke: #ffffff;
+}
+
+.tabs__content div:disabled .tabs__mark {
   opacity: 30%;
 }
 
-.tabs__content details {
+.tabs__content li {
   padding: 20px 0;
   position: relative;
 
   border-top: 1px solid #74819c;
 
   @media (min-width: $tablet) {
-    padding: 22px 0;
+    padding: 23px 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 23px 0 22px;
   }
 }
 
-.tabs__content details:last-child {
+.tabs__content li:last-child {
   padding: 20px 0;
   border-bottom: 1px solid #74819c;
 
   @media (min-width: $tablet) {
-    padding: 25px 0;
+    padding: 24px 0 22px;
   }
 
   @media (min-width: $desktop) {
@@ -237,9 +236,8 @@ summary:disabled .tabs__mark {
 }
 
 .tabs__content p {
-  padding-top: 20px;
-  padding-right: 52px;
   margin: 0;
+  width: 238px;
 
   font-family: $roboto;
   font-size: 16px;
@@ -247,16 +245,20 @@ summary:disabled .tabs__mark {
   font-weight: 300;
   color: $base-blue;
 
+  position: relative;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+
   @media (min-width: $tablet) {
-    padding-top: 10px;
-    padding-right: 118px;
+    width: 560px;
 
     font-size: 18px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop) {
-    padding-top: 23px;
-    padding-right: 200px;
+    width: 660px;
   }
 }

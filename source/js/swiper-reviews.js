@@ -1,7 +1,7 @@
-import Swiper from "swiper";
-import { Navigation } from "swiper/modules";
+import Swiper from 'swiper';
+import { Navigation } from 'swiper/modules';
 
-export const swiperFaq = new Swiper(".swiper--faq", {
+export const swiperFaq = new Swiper('.swiper--faq', {
   modules: [Navigation],
 
   loop: false,
@@ -9,8 +9,8 @@ export const swiperFaq = new Swiper(".swiper--faq", {
   spaceBetween: 40,
 
   navigation: {
-    nextEl: ".reviews__button--next",
-    prevEl: ".reviews__button--prev",
+    nextEl: '.reviews__button--next',
+    prevEl: '.reviews__button--prev',
   },
 
   breakpoints: {
