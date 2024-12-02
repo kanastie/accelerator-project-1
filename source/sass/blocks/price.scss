@@ -1,34 +1,40 @@
 .price--wrapper {
-  padding: 40px 15px;
-
   background-color: $add-white;
+  overflow: hidden;
+}
+
+.price__container {
+  padding: 41px 15px 40px;
+  margin: 0 auto;
+  width: 290px;
 
   @media (min-width: $tablet) {
-    padding: 60px 194px 56px;
+    padding: 61px 194px 56px;
+    width: 380px;
     position: relative;
-    overflow: hidden;
   }
 
   @media (min-width: $desktop) {
-    padding: 94px 103px 97px;
+    padding: 100px 103px 97px;
+    width: 1160px;
   }
 }
 
-.price--wrapper::after {
+.price__container::after {
   @media (min-width: $tablet) {
     content: "";
     display: block;
     width: 275px;
     height: 328px;
     position: absolute;
-    bottom: 13px;
+    bottom: 8px;
     right: -14px;
     transform: rotate(150deg);
-    background-image: url("../../img/content-img/plates.png");
+    background-image: url("../../img/plates.webp");
     background-size: contain;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/content-img/plates@2x.png");
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/plates@2x.webp");
       background-size: contain;
     }
   }
@@ -39,8 +45,8 @@
     width: 321px;
     height: 384px;
     transform: rotate(150deg);
-    right: -7%;
-    bottom: 4px;
+    right: -92px;
+    bottom: 5px;
   }
 }
 
@@ -56,7 +62,7 @@
   text-align: center;
 
   @media (min-width: $tablet) {
-    margin-bottom: 35px;
+    margin-bottom: 37px;
 
     font-size: 42px;
     line-height: 42px;
@@ -76,14 +82,15 @@
 
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet) {
-    margin: 0 auto 45px;
+    margin: 0 auto 44px;
     width: 310px;
   }
 
   @media (min-width: $desktop) {
-    margin: 0 auto 40px;
+    margin: 0 auto 38px;
     width: 350px;
   }
 }
@@ -94,13 +101,13 @@
   width: 100%;
   height: 2px;
   position: absolute;
-  bottom: 1px;
+  bottom: 2px;
   background-color: rgba(120, 120, 120, 0.2);
 }
 
 .price__tab {
   padding: 0;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
 
   font-family: $roboto;
   font-size: 16px;
@@ -115,11 +122,15 @@
   cursor: pointer;
 
   @media (min-width: $tablet) {
+    padding-bottom: 10px;
+
     font-size: 18px;
     line-height: 18px;
   }
 
   @media (min-width: $desktop) {
+    padding-bottom: 12px;
+
     font-size: 20px;
     line-height: 20px;
   }
@@ -137,7 +148,7 @@
   width: 100%;
   height: 2px;
   position: absolute;
-  bottom: 1px;
+  bottom: 2px;
   background-color: $border-tab-color;
 }
 
@@ -152,7 +163,7 @@
   width: 100%;
   height: 2px;
   position: absolute;
-  bottom: 1px;
+  bottom: 2px;
   background-color: #787878;
 }
 
@@ -168,7 +179,7 @@
   width: 100%;
   height: 2px;
   position: absolute;
-  bottom: 1px;
+  bottom: 2px;
   background-color: $base-blue;
 }
 
@@ -183,7 +194,7 @@
   width: 100%;
   height: 2px;
   position: absolute;
-  bottom: 1px;
+  bottom: 2px;
   background-color: $border-tab-color;
 }
 
@@ -209,50 +220,45 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 37px;
+  gap: 35px;
 
   @media (min-width: $tablet) {
     position: relative;
     z-index: 1;
-    gap: 35px;
+    gap: 40px;
   }
 
   @media (min-width: $desktop) {
     flex-direction: row;
+    gap: 40px;
   }
 }
 
 .price__item {
-  padding: 43px 36px;
+  padding: 43px 35px;
+  width: 290px;
   display: flex;
   flex-direction: column;
   gap: 18px;
+  min-height: 384px;
 
   border: 7px solid $base-white;
   box-sizing: border-box;
   background-color: $base-white;
 
   @media (min-width: $tablet) {
-    padding: 59px 61px 65px;
+    padding: 57px;
+    width: 380px;
     gap: 22px;
+    min-height: 460px;
   }
 
   @media (min-width: $desktop) {
+    padding: 58px;
     width: 360px;
     gap: 17px;
+    min-height: 447px;
   }
-}
-
-.price__item:hover {
-  border: 7px solid;
-  border-image-slice: 7;
-  border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
-}
-
-.price__item:hover .link--secondary {
-  color: $base-white;
-  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-  box-shadow: 0 0 0 2px $base-white;
 }
 
 .price__headling {
@@ -306,7 +312,7 @@
 
 .price__price-wrapper::before {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
 
   font-family: $roboto;
   font-size: 80px;
@@ -337,27 +343,27 @@
 }
 
 .price__price-wrapper--forth::before {
-  content: "30 000" / "";
+  content: "30000" / "";
 }
 
 .price__price-wrapper--fifth::before {
-  content: "10 200" / "";
+  content: "10200" / "";
 }
 
 .price__price-wrapper--sixth::before {
-  content: "16 000" / "";
+  content: "16000" / "";
 }
 
 .price__price-wrapper--seventh::before {
-  content: "60 000" / "";
+  content: "60000" / "";
 }
 
 .price__price-wrapper--eigth::before {
-  content: "20 400" / "";
+  content: "20400" / "";
 }
 
 .price__price-wrapper--ninth::before {
-  content: "32 400" / "";
+  content: "32400" / "";
 }
 
 .price__price-wrapper div {

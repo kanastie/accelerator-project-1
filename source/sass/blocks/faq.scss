@@ -1,14 +1,20 @@
 .faq--wrapper {
-  padding: 72px 15px 70px;
-
   background-color: $add-white;
+}
+
+.faq__container {
+  padding: 71px 15px 70px;
+  margin: 0 auto;
+  width: 290px;
 
   @media (min-width: $tablet) {
-    padding: 60px 45px;
+    padding: 61px 45px 60px;
+    width: 678px;
   }
 
   @media (min-width: $desktop) {
     padding: 100px 103px;
+    width: 1160px;
 
     display: flex;
     flex-direction: column;
@@ -17,7 +23,7 @@
 
 .faq__title {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 
   font-family: $alumni;
   font-size: 32px;
@@ -27,7 +33,7 @@
   text-align: center;
 
   @media (min-width: $tablet) {
-    margin-bottom: 45px;
+    margin-bottom: 44px;
 
     font-size: 42px;
     line-height: 42px;

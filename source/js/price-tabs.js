@@ -5,9 +5,9 @@ const tabItems = block.querySelectorAll('.price__content');
 tabButtons.forEach((button) => {
   button.addEventListener('click', () => {
 
-    let currentButton = button;
-    let tabId = currentButton.getAttribute('data-price-tab');
-    let currentTab = document.getElementById(`price-${tabId}`);
+    const currentButton = button;
+    const tabId = currentButton.getAttribute('data-price-tab');
+    const currentTab = document.getElementById(`price-${tabId}`);
 
     tabButtons.forEach((item) => {
       item.classList.remove('price__tab--active');

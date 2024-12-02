@@ -1,12 +1,19 @@
 .offers--wrapper {
   background-color: $base-white;
+}
+
+.offers__wrapper-container {
+  margin: 0 auto;
+  width: 320px;
 
   @media (min-width: $tablet) {
-    padding: 60px 45px;
+    padding: 61px 45px 60px;
+    width: 678px;
   }
 
   @media (min-width: $desktop) {
     padding: 100px 103px;
+    width: 1160px;
 
     display: grid;
     grid-template-columns: 560px auto;
@@ -25,9 +32,9 @@
 }
 
 .offers__title {
-  padding: 40px 15px 0;
+  padding: 41px 15px 0;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 
   font-family: $alumni;
   font-size: 32px;
@@ -38,7 +45,7 @@
 
   @media (min-width: $tablet) {
     padding: 0;
-    margin-bottom: 35px;
+    margin-bottom: 34px;
 
     font-size: 42px;
     line-height: 42px;
@@ -54,7 +61,8 @@
 }
 
 .offers__main-wrapper {
-  padding: 30px 30px 35px;
+  padding: 31px 30px 36px;
+  width: 260px;
 
   display: flex;
   flex-direction: column;
@@ -64,14 +72,16 @@
   background-color: $bg-banner;
 
   @media (min-width: $tablet) {
-    padding: 40px 25px;
+    padding: 40px 25px 46px;
+    width: 228px;
 
     align-items: start;
     gap: 40px;
   }
 
   @media (min-width: $desktop) {
-    padding: 40px 45px;
+    padding: 40px 45px 50px;
+    width: 190px;
   }
 }
 
@@ -93,6 +103,7 @@
   line-height: 22px;
   font-weight: 700;
   color: $base-white;
+  word-break: break-all;
 
   @media (min-width: $tablet) {
     font-size: 24px;
@@ -111,6 +122,7 @@
   line-height: 64px;
   font-weight: 700;
   color: $base-white;
+  word-break: break-all;
 
   @media (min-width: $tablet) {
     font-size: 70px;
@@ -138,6 +150,9 @@
 }
 
 .offers__link {
+  padding: 10px;
+  margin-top: -10px;
+  margin-bottom: -10px;
   position: relative;
 
   font-family: $roboto;
@@ -151,29 +166,30 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
-    padding-top: 20px;
-    padding-bottom: 4px;
+    margin-left: -10px;
   }
 
   @media (min-width: $desktop) {
-    padding-top: 0;
-    padding-bottom: 0;
+    margin-bottom: -9px;
   }
 
   &--main {
-    padding-top: 5px;
     color: $base-white;
+
+    @media (min-width: $desktop) {
+      margin-bottom: -14px;
+    }
   }
 }
 
 .offers__link::after {
   content: "";
   display: block;
-  width: 100%;
+  width: 80%;
   height: 1px;
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 4px;
+  left: 10px;
   background-color: $base-blue;
 }
 
@@ -188,65 +204,31 @@
 .offers__link:focus-visible {
   position: relative;
   outline: none;
+  box-shadow: inset 0 0 0 1px $add-blue;
+}
+
+.offers__link--main:focus-visible {
+  box-shadow: inset 0 0 0 1px $base-white;
 }
 
 .offers__link:focus-visible::after {
-  content: "";
-  width: 93px;
-  height: 34px;
-  border: 1px solid $add-blue;
-  background-color: transparent;
-  position: absolute;
-  top: -72%;
-  left: -15%;
+  display: none;
+}
 
-  @media (min-width: $tablet) {
-    top: 21%;
-  }
-
-  @media (min-width: $desktop) {
-    top: -71%;
-  }
+.offers__link--main:disabled {
+  opacity: 50%;
 }
 
 .offers__link:disabled {
   opacity: 30%;
 }
 
-.offers__link--main:focus-visible {
-  position: relative;
-  outline: none;
-}
-
-.offers__link--main:focus-visible::after {
-  border: 1px solid $base-white;
-  top: -30%;
-
-  @media (min-width: $tablet) {
-    top: -21%;
-  }
-
-  @media (min-width: $desktop) {
-    top: -30%;
-  }
-}
-
 .offers__img {
-  margin: 0 auto;
-  display: block;
-  height: 360px;
-  object-fit: cover;
-  object-position: top;
-
   background-color: #4472de;
 
-  @media (min-width: $tablet) {
-    height: 462px;
-  }
-
-  @media (min-width: $desktop) {
-    width: 280px;
-    height: 460px;
+  img {
+    display: block;
+    object-fit: cover;
   }
 }
 
@@ -290,12 +272,12 @@
 }
 
 .offers__item {
-  padding: 21px 20px 23px;
+  padding: 20px 20px 25px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 21px;
+  gap: 20px;
 
   border: 7px solid;
   border-image-slice: 7;
@@ -311,7 +293,7 @@
   @media (min-width: $desktop) {
     width: 560px;
     box-sizing: border-box;
-    gap: 12px;
+    gap: 10px;
   }
 }
 
@@ -344,6 +326,7 @@
 
   @media (min-width: $tablet) {
     flex-grow: 1;
+    margin-bottom: 21px;
 
     font-size: 16px;
     line-height: 24px;

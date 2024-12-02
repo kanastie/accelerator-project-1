@@ -9,6 +9,7 @@
   list-style: none;
 
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 20px;
 
@@ -33,9 +34,11 @@
 }
 
 .social__link {
+  padding: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
 }
 
 .social__item:hover {
@@ -66,4 +69,8 @@
 
 .social__item:disabled {
   opacity: 30%;
+}
+
+.social__link:focus-visible {
+  outline: none;
 }

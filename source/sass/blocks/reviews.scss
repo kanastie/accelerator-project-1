@@ -1,14 +1,20 @@
 .reviews--wrapper {
-  padding: 40px;
-
   background-color: $base-white;
+}
+
+.reviews__container {
+  padding: 41px 40px 40px;
+  margin: 0 auto;
+  width: 240px;
 
   @media (min-width: $tablet) {
-    padding: 58px 45px 59px;
+    padding: 60px 45px;
+    width: 678px;
   }
 
   @media (min-width: $desktop) {
     padding: 100px 103px;
+    width: 1160px;
   }
 }
 
@@ -40,12 +46,16 @@
 }
 
 .reviews__button {
-  @media (max-width: 767px) {
+  @media (width <= 767px) {
     display: none;
   }
 
   @media (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
+    top: 50%;
     width: 50px;
     height: 50px;
 
@@ -53,6 +63,24 @@
     border-radius: 50%;
     background-color: transparent;
     cursor: pointer;
+  }
+}
+
+.reviews__button--prev {
+  left: -19px;
+  transform: translateY(-50%) rotate(180deg);
+
+  @media (min-width: $desktop) {
+    left: 178px;
+  }
+}
+
+.reviews__button--next {
+  right: -19px;
+  transform: translateY(-50%);
+
+  @media (min-width: $desktop) {
+    right: 178px;
   }
 }
 
@@ -71,68 +99,8 @@
   background-color: $base-blue;
 }
 
-.reviews__button--prev:active::after {
-  content: "";
-  width: 50px;
-  height: 50px;
-  display: block;
-  background-color: transparent;
-
-  top: 0;
-  left: 0;
-  position: absolute;
-
-  background-image: url("data:image/svg+xml,%3Csvg width='12' height='22' viewBox='0 0 12 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L11 11L1 21' stroke='%23ffffff'/%3E%3C/svg%3E%0A");
-  background-size: 20px 34px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.reviews__button--next:active::after {
-  content: "";
-  width: 50px;
-  height: 50px;
-  display: block;
-  background-color: transparent;
-
-  top: 0;
-  left: 0;
-  position: absolute;
-
-  background-image: url("data:image/svg+xml,%3Csvg width='12' height='22' viewBox='0 0 12 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L11 11L1 21' stroke='%23ffffff'/%3E%3C/svg%3E%0A");
-  background-size: 20px 34px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.reviews__button--prev {
-  top: 50%;
-  left: -19px;
-  transform: translateY(-50%) rotate(180deg);
-
-  background-image: url("../../img/sprite/arrow.svg");
-  background-size: 20px 34px;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  @media (min-width: $desktop) {
-    left: 178px;
-  }
-}
-
-.reviews__button--next {
-  top: 50%;
-  right: -18px;
-  transform: translateY(-50%);
-
-  background-image: url("../../img/sprite/arrow.svg");
-  background-size: 20px 34px;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  @media (min-width: $desktop) {
-    right: 178px;
-  }
+.reviews__button:active svg {
+  stroke: $base-white;
 }
 
 .reviews__button:disabled {
