@@ -30,11 +30,11 @@
     bottom: 8px;
     right: -14px;
     transform: rotate(150deg);
-    background-image: url("../../img/plates.webp");
+    background-image: url("../../img/graphic/plates.webp");
     background-size: contain;
 
     @media (resolution >= 2dppx) {
-      background-image: url("../../img/plates@2x.webp");
+      background-image: url("../../img/graphic/plates@2x.webp");
       background-size: contain;
     }
   }
