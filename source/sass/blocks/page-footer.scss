@@ -1,5 +1,7 @@
 .page-footer--wrapper {
   @media (min-width: $desktop) {
+    margin: 0 auto;
+    width: fit-content;
     display: flex;
   }
 }

@@ -127,6 +127,8 @@
   font-weight: 400;
   color: $base-blue;
 
+  cursor: pointer;
+
   @media (min-width: $tablet) {
     font-size: 22px;
     line-height: 22px;
@@ -203,8 +205,23 @@
   stroke: #ffffff;
 }
 
-.tabs__content div:disabled .tabs__mark {
+.tabs__content button:disabled {
   opacity: 30%;
+  pointer-events: none;
+  cursor: default;
+}
+
+.tabs__content div:hover:has(button:disabled) {
+  cursor: default;
+  pointer-events: none;
+}
+
+.tabs__content div:hover:has(button:disabled) button {
+  background-color: transparent;
+}
+
+.tabs__content div:hover:has(button:disabled) svg {
+  background-color: $add-blue;
 }
 
 .tabs__content li {

@@ -8,7 +8,7 @@
   }
 }
 
-.swiper--faq {
+.swiper--reviews {
   @media (min-width: $tablet) {
     width: 500px;
   }
@@ -18,6 +18,6 @@
   }
 }
 
-.swiper--faq .swiper-slide {
+.swiper--reviews .swiper-slide {
   box-sizing: border-box;
 }
