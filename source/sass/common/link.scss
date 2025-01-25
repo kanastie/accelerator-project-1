@@ -63,7 +63,7 @@
   background-color: $base-white;
 }
 
-.link:disabled {
+.link--disabled {
   opacity: 50%;
 }
 
@@ -91,6 +91,6 @@
   box-shadow: 0 0 0 2px $base-white;
 }
 
-.link--secondary:disabled {
+.link--secondary-disabled {
   opacity: 30%;
 }

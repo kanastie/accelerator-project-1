@@ -311,6 +311,7 @@
 }
 
 .price__price-wrapper::before {
+  content: attr(data-price);
   position: absolute;
   bottom: 0;
 
@@ -328,42 +329,6 @@
     font-size: 100px;
     line-height: 150px;
   }
-}
-
-.price__price-wrapper--first::before {
-  content: "5000" / "";
-}
-
-.price__price-wrapper--second::before {
-  content: "1700" / "";
-}
-
-.price__price-wrapper--third::before {
-  content: "2700" / "";
-}
-
-.price__price-wrapper--forth::before {
-  content: "30000" / "";
-}
-
-.price__price-wrapper--fifth::before {
-  content: "10200" / "";
-}
-
-.price__price-wrapper--sixth::before {
-  content: "16000" / "";
-}
-
-.price__price-wrapper--seventh::before {
-  content: "60000" / "";
-}
-
-.price__price-wrapper--eigth::before {
-  content: "20400" / "";
-}
-
-.price__price-wrapper--ninth::before {
-  content: "32400" / "";
 }
 
 .price__price-wrapper div {

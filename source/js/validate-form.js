@@ -1,21 +1,11 @@
+import {sendData} from './api';
+
 const formSection = document.querySelector('.form');
 const form = formSection.querySelector('form');
+const submitButton = formSection.querySelector('.form__button');
 
-form.addEventListener('submit', (evt) => {
-  evt.preventDefault();
 
-  if (checkValidtion(form) === true) {
-    form.querySelector('.form__modal').style.display = 'block';
-
-    setTimeout(() => {
-      form.querySelector('.form__modal').style.display = 'none';
-    }, 2000);
-
-    form.reset();
-  }
-});
-
-function checkValidtion (el) {
+const checkValidtion = (el) => {
   let result = true;
 
   const inputsList = el.querySelectorAll('input');
@@ -47,7 +37,7 @@ function checkValidtion (el) {
     return result;
   });
   return result;
-}
+};
 
 function createError (input, text) {
   const parent = input.parentNode;
@@ -72,3 +62,43 @@ function checkPattern (input) {
     return false;
   }
 }
+
+const showSuccess = () => {
+  form.querySelector('.form__modal').style.display = 'block';
+
+  setTimeout(() => {
+    form.querySelector('.form__modal').style.display = 'none';
+  }, 2000);
+};
+
+const blockSumbitButton = () => {
+  submitButton.disabled = true;
+};
+
+const unblockSumbitButton = () => {
+  submitButton.disabled = false;
+};
+
+const setUserFormSubmit = () => {
+  form.addEventListener('submit', (evt) => {
+    evt.preventDefault();
+
+    if (checkValidtion(form) === true) {
+      const formData = new FormData(evt.target);
+      blockSumbitButton();
+
+      sendData(
+        formData,
+        () => {
+          showSuccess();
+          form.reset();
+        },
+        () => {
+          unblockSumbitButton();
+        },
+      );
+    }
+  });
+};
+
+export {setUserFormSubmit};
